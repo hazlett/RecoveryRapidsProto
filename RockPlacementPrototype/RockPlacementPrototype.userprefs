@@ -1,0 +1,24 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Mal\MalSetManager.cs">
+    <Files>
+      <File FileName="Assets\TestScripts\MovieTest.cs" Line="6" Column="26" />
+      <File FileName="Assets\Mal\Prompt.cs" Line="231" Column="14" />
+      <File FileName="Assets\Mal\ButtonComponent.cs" Line="1" Column="1" />
+      <File FileName="Assets\Mal\Mal.cs" Line="1" Column="1" />
+      <File FileName="Assets\Mal\MalSet.cs" Line="1" Column="1" />
+      <File FileName="Assets\Mal\MalSetLogger.cs" Line="1" Column="1" />
+      <File FileName="Assets\Mal\MalSetSerializer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Mal\VideoComponent.cs" Line="1" Column="1" />
+      <File FileName="Assets\Mal\PromptLayout.cs" Line="1" Column="1" />
+      <File FileName="Assets\Mal\Question.cs" Line="1" Column="1" />
+      <File FileName="Assets\Mal\Answer.cs" Line="1" Column="1" />
+      <File FileName="Assets\UIScripts\MenuUIFunctions.cs" Line="1" Column="1" />
+      <File FileName="Assets\Mal\MalSetManager.cs" Line="33" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

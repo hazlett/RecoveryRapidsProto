@@ -1,0 +1,2492 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MalSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <Mals>
+
+    <Mal id="0">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Turn on a light switch?</questions>
+          <soundfile>Did_you_turn_on_a_light_switch_with_your_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="hard_work_pays_off" prompt="Trying new things with your hand can be frustrating, but your hard work will pay off" />
+            <button id="1" videofollowupid="1" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" soundfile="nice_start" prompt="Nice start-  I like the effort you are putting into your recovery" />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="practice_makes_perfect" prompt="practice makes perfect" />
+            <button id="3" videofollowupid="3" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="a_little_more_practice" prompt="fantastic!  A little more practice and you might even forget which hand was giving you troubles before!" />
+            <button id="4" videofollowupid="4" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="excellent_work" prompt="Excellent work!  But remember, you still need to keep using that hand." />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_turn_on_light_switch</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <!-- <video filename="test3" id="0" /> -->
+            <video filename="TurnOnLight1" id="0" />
+            <video filename="TurnOnLight2" id="1" />
+            <video filename="TurnOnLight3" id="2" />
+            <video filename="TurnOnLight4" id="3" />
+            <video filename="TurnOnLight5" id="4" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="give_it_a_try" prompt="give it a try! what have you got to lose?" />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="Practice_few_times_today_easier_tomorrow" prompt="Practice a few times more today and it will be easier tomorrow" />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="practice_for_exercise" prompt="Even if you don't usually do this activity, try practicing it this week just for exercise" />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="Shame_you_promised_work_hard_this_week" prompt="Shame on you!  you promised to work hard this week.  How about you do it yourself next time-  You won't believe how good it will make you feel when you challenge yourself." />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Place your forearm against the wall and slide it up by raising at the shoulder" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Stabilize your elbow against your body, flip switch with elbow motion" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions>Your brain is making new connections even when you are not successful with every attempt. Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Place your forearm against the wall and slide it up raising at the shoulder" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Stabilize your elbow against your body, flip switch with elbow motion" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Nice choice!</questions>
+          <soundfile>nice_choice</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Can't wait to see you try!</questions>
+          <soundfile>Cant_wait_to_see_you_try</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+    <Mal id="1">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Open a drawer?</questions>
+          <soundfile>open_a_drawer_in_2_days</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="try_try_again" prompt="try try again.  You can improve." />
+            <button id="1" videofollowupid="0" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" soundfile="give_hand_extra_time_before_other_hand" prompt="Nice effort.  Remember to give your hand some extra time to try before you use your other hand to help"/>
+            <button id="2" videofollowupid="1" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="keep_it_up" prompt="Every time you try you are getting better.  Keep it up"/>
+            <button id="3" videofollowupid="2" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="pat_yourself_on_the_back" prompt="It must feel good to be so successful.  Pat yourself on the back!...but uh, use your weaker hand."/>
+            <button id="4" videofollowupid="3" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="fantastic" prompt="Fantastic!" />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_weaker_arm_open_drawer</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="OpenDrawer1" id="0" />
+            <video filename="OpenDrawer3" id="1" />
+            <video filename="OpenDrawer4" id="2" />
+            <video filename="OpenDrawer5" id="3" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="you_win_another_try" prompt="it's okay if it doesn't work at first.  If you don't succeed right away you win another try!"/>
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="you_win_another_try" prompt="Nothing ever gets better without hard work." />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="you_never_open_a_drawer" prompt="You never open a drawer?  You should try it.  It is great fun." />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="nice_have_help_nicer_gain_new_skill_self" prompt="It's nice to have help but it's even nicer to gain a new skill for yourself" />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="chocolate_in_drawer" prompt="hmmm.. you should give it a try, someone might have hid some chocolate in the drawer." />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Use your less affected hand to place more affected hand in the handle" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Modify the handle, such as with a temporary loop of fabric, to make it easier to grasp" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Use your less affected hand to place more affected hand in the handle" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Modify the handle, such as with a temporary loop of fabric, to make it easier to grasp" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Good thinking!</questions>
+          <soundfile>Good_thinking!</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Can't wait to see your effort!</questions>
+          <soundfile>Cant_wait_to_see_your_effort</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+    <Mal id="2">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Remove an item of clothing from a drawer?</questions>
+          <soundfile>Remove_an_item_of_clothing_from_drawer</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="failure_is_frustrating" prompt="failure can be frustrating but not as frustrating as never trying.  Keep up the practice" />
+            <button id="1" videofollowupid="1" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" soundfile="good_hand_on_drawer_weak_hand_pull" prompt="try using your good hand to position your weaker hand on the drawer and then pulling" />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile ="what_to_focus_on_to_perfect_it" prompt="hard work pays off." />
+            <button id="3" videofollowupid="3" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile ="what_to_focus_on_to_perfect_it" prompt="great-  what do you need to focus on to make it perfect?" />
+            <button id="4" videofollowupid="4" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="congratulations_one_more_skill" prompt="congratulations.  One more skill to add to your list of accomplishments." />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_remove_item_of_clothing_from_drawer</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="RemoveClothing1" id="0" />
+            <video filename="RemoveClothing2" id="1" />
+            <video filename="RemoveClothing3" id="2" />
+            <video filename="RemoveClothing4" id="3" />
+            <video filename="RemoveClothing5" id="4" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="clothes_arent_scary" prompt="Don't be afraid, clothes aren't scary." />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="practice_getting_clothes_out" prompt="practice getting the clothes out when you are not in a hurry to get dressed then you won't get as frustrated." />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="you_dont_put_on_clothes" prompt="You don't put on clothes?  come on now- you must be pulling my leg"/>
+            <button id="3" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="curtains_closed" prompt="hmmm..  you don't put on clothes- hopefully you keep the curtains closed."/>
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Scoop under the item and bring it against your trunk" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Minimize the number of items in a drawer to make the task easier" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Scoop under the item and bring it against your trunk" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Minimize the number of items in a drawer to make the task easier" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Can't wait to see your effort!</questions>
+          <soundfile>Cant_wait_to_see_your_effort</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Excited to see you work!</questions>
+          <soundfile>Excited_see_you_work</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+    <Mal id="3">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Pick up a phone?</questions>
+          <soundfile>pick_up_phone_with_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="telemarketer_practice_again" prompt="that's okay, it was probably just a telemarketer.  Why don't you practice before the phone rings so you're ready for the next call" />
+            <button id="1" videofollowupid="0" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" soundfile="problem_solve_phone" prompt="After you hang up from the call, take a moment to problem solve how to try it again next time" />
+            <button id="2" videofollowupid="1" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="on_your_way" prompt="Slow and steady wins.  you are on your way" />
+            <button id="3" videofollowupid="2" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="celebrate_success" prompt="Fantastic, remember to keep using your weaker hand even when it gets easier.  Practice is important to retain the skill" />
+            <button id="4" videofollowupid="3" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="celebrate_success" prompt="great!  why don't you call a friend to celebrate your success." />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_of_weaker_arm_pull_chair_toward_table</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="PickUpPhone1" id="0" />
+            <video filename="PickUpPhone3" id="1" />
+            <video filename="PickUpPhone4" id="2" />
+            <video filename="PickUpPhone5" id="3" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="pick_phone_up_10_times" prompt="if you are afraid you will miss a call, practice picking up the phone 10 times when it isn't ringing.  Then you will be ready to try it when it rings again" />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="Think_picture_every_detail_picking_up_phone_reciever_feel_hand_ear" prompt="If this activity is just too hard right now, try mental practice.  Believe me, research says it works.  Set aside 5 minutes and think in detail how you would pick up the phone.  Picture yourself succeeding.  Think about opening your hand and how the receiver will feel when you grab it.  Picture yourself turning your palm up to set it up to your ear.  Picture this over and over paying attention to every detail" />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="call_up_a_friend" prompt="Why not?  Call up a friend and say hello.  It will make you both happy" />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="remind_people_you_want_practice" prompt="Please remind people that you are committed to using your hand and want to practice." />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="practice_for_next_call" prompt="You can practice when the phone isn't ringing so you are ready for the next call." />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Apply a loop or strap to the phone to slip the hand through" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Assist by placing phone in hand with the other hand" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Apply a loop or strap to the phone to slip the hand through" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Assist by placing phone in hand with the other hand" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Excited to see you work!</questions>
+          <soundfile>Excited_see_you_work</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Can't wait to see your effort!</questions>
+          <soundfile>Cant_wait_to_see_your_effort</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+    <Mal id="4">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Wipe off a kitchen counter or any other type of surface?</questions>
+          <soundfile>wipe_off_kitchen_counter</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" />
+            <button id="1" videofollowupid="1" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" />
+            <button id="3" videofollowupid="3" text="Almost normal" followup="2" rating="4" eliminatemal="false" />
+            <button id="4" videofollowupid="4" text="Normal" followup="2" rating="5" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_wipe_off_kitche_counter_anhy_other_surface</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="WipeCounter1" id="0" />
+            <video filename="WipeCounter2" id="1" />
+            <video filename="WipeCounter3" id="2" />
+            <video filename="WipeCounter4" id="3" />
+            <video filename="WipeCounter5" id="4" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="clean_dirty_counter" prompt="If that dirty counter is bothering you that much, clean it with your good hand and then dry it with your weaker hand." />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile ="practice_on_clean_counter" prompt="If you can't get the counter clean practice on a clean counter.  The goal is to do the movement.  The outcome is just a bonus" />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="clean_up_next_time" prompt="Wow- I wish I had your cleaning crew!  give it a try just for practice." />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile ="clean_up_next_time" prompt="Why don't you volunteer to clean up next time. I am sure your efforts would be appreciated and you will get some good practice." />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="clean_up_next_time" prompt="" />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Sit down before wiping so your body is more stable" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Use a larger cloth or sponge that is easier to grasp" followup="6" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Use a bath mitt worn like a mitten to clean surfaces" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions>Sometimes failure is inevitable, but not trying is not an option. Which of these strategies would you be willing to try?</questions>
+          <soundfile>failure_inevitable_try_again</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Sit down before wiping so your body is more stable" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Use a larger cloth or sponge that is easier to grasp" followup="7" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Use a bath mitt worn like a mitten to clean surfaces" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Sometimes failure is inevitable, but not trying is not an option. Which of these strategies might work for you?</questions>
+          <soundfile>failure_inevitable_try_again</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Excited to see you work!</questions>
+          <soundfile>Excited_see_you_work</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Can't wait to see those clean counters!</questions>
+          <soundfile>Cant_wait_to_see_clean_counters</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+
+    <Mal id="5">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Open a refrigerator?</questions>
+          <soundfile>open_refrigerator</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="thinking_about_task_fridge" prompt="Even just thinking about the task and making an effort helps your brain make new connections.  Stand in front of the fridge and picture yourself succeeding.  Picture your arm reaching up for the door and then rotating so you can line your hand up to grab.  Now picture your hand opening and grasping the handle.  Think about gripping the handle tightly as you pull the door open." />
+            <button id="1" videofollowupid="1" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" soundfile="Take_time_will_be_worth_it" prompt="Take your time and give your weak hand a few tries before you use your other hand to help. The effort is the important part. If you keep trying, you  will surprise yourself and succeed soon." />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="healthy_treat" prompt="reward your hard work with a healthy treat from the fridge" />
+            <button id="3" videofollowupid="3" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="successful_recovery" prompt="you are well on your way to a successful recovery" />
+            <button id="4" videofollowupid="4" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="congratulations_on_hard_work" prompt="Congratulations.  you must be so proud of your hard work" />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_open_refridgerator</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="OpenFridge1" id="0" />
+            <video filename="OpenFridge2" id="1" />
+            <video filename="OpenFridge3" id="2" />
+            <video filename="OpenFridge4" id="3" />
+            <video filename="OpenFridge5" id="4" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="thinking_about_the_activity" prompt="Remember, even thinking about the activity while you are trying will help improve the connections in your brain" />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="make_it_easier_stand_closer_to_fridge_" prompt="What could you do to make the activity easier?  could you stand closer to the refrigerator so you don't have to reach so far?" />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="must_be_hungry" prompt="Boy, you must be hunger!  Go get yourself a snack, but come right back and play a while longer" />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="how_chivalrous_of_them_return_the_favor_next_time" />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="you_dont_eat" prompt="What, you don't eat?  I don't believe you" />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Apply a temporary strap that would be easier to grasp" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Change the distance or approach of your body to make it easier" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions>If you don't try, you can't succeed. Which of these strategies would you be willing to try?</questions>
+          <soundfile>Dont_try_cant_succeed_which_strategy_willing_try</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Apply a temporary strap that would be easier to grasp" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Change the distance or approach of your body to make it easier" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>If you don't try, you can't succeed. Which of these strategies would you be willing to try?</questions>
+          <soundfile>Dont_try_cant_succeed_which_strategy_willing_try</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Can't wait to see you try!</questions>
+          <soundfile>Cant_wait_to_see_you_try</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Excited to see you work!</questions>
+          <soundfile>Excited_see_you_work</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+    <Mal id="6">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Open a door by turning a door knob?</questions>
+          <soundfile>open_a_door_by_turning_doorknob</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="lighter_door" prompt="Try a lighter door like a closet door to start" />
+            <button id="1" videofollowupid="1" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" soundfile="light_doors_to_heavy" prompt="Try it again and see how much you can do with just your weaker hand.  Even if you can't open it completely just practice getting your hand on the knob while you picture yourself doing the task.  Think hard about the detail you will do to succeed. you will get better with each try." />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="light_doors_to_heavy" prompt="Nice effort. You can start with light weight doors, but work your way up to heavier doors as you improve." />
+            <button id="3" videofollowupid="3" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="try_different_doors_and_doorknobs" prompt="Great.  Make sure you try all different kinds of doors and door knobs" />
+            <button id="4" videofollowupid="4" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="door_nothing_can_stand_in_your_way" prompt="At the rate you are going, there is nothing that can stand in your way.  Not even a heavy door." />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_weaker_arm_turning_door_knob</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="OpenDoor1" id="0" />
+            <video filename="OpenDoor2" id="1" />
+            <video filename="OpenDoor3" id="2" />
+            <video filename="OpenDoor4" id="3" />
+            <video filename="OpenDoor5" id="4" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="efforts_will_be_awarded" prompt="Set aside a time when you can practice opening a closing a door so you are ready when the doorbell rings." />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="efforts_will_be_awarded" prompt="Keep trying, even if at first you don't succeed.  I guarantee your efforts will be rewarded." />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="open_door_boogie_man_isnt_hiding" prompt="Go ahead and open up that door.  The boogie man isn't really hiding behind it" />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" sounfile="opening_a_door_5_times_practice" prompt="You can always practice opening a door even when you don't have anywhere to go.  Why don't you go try opening and closing a door five times right now." />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="opening_a_door_5_times_practice" prompt="You can always practice opening a door even when you don't have anywhere to go.  Why don't you go try opening and closing a door five times right now." />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Apply a textured surface such as with Dycem or tape to decrease slip" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Approach the knob from the side, do the rotation with the arm" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Apply a textured surface such as with Dycem or tape to decrease slip" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Approach the knob from the side, do the rotation with the arm" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Good thinking!</questions>
+          <soundfile>Good_thinking!</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Can't wait to see your effort!</questions>
+          <soundfile>Cant_wait_to_see_your_effort</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+    <Mal id="7">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Use a TV remote control?</questions>
+          <soundfile>TV_remote_control</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="Try_setting_remote_on_table_using_weaker_hand_select_button" prompt="can you try setting the remote on a table and using your weaker hand to select a button" />
+            <button id="1" videofollowupid="1" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" soundfile="Try_setting_remote_on_table_using_weaker_hand_select_button" prompt="can you try setting the remote on a table and using your weaker hand to select a button" />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="TV_break" prompt="I am sure you didn't miss much on TV by being slow and I am so proud of your efforts. perhaps you can practice again during the commercials" />
+            <button id="3" videofollowupid="2" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="skip_to_a_different_channel" prompt="since you are getting so good why don't you skip to a different channel during the commercials just for practice" />
+            <button id="4" videofollowupid="3" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="skip_to_a_different_channel" prompt="If you are so good at this task, stop watching TV and try something else with that hand.  Can you button a shirt?" />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>rate_ability_Use_tv_remote_control</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="UseRemote1" id="0" />
+            <video filename="UseRemote2" id="1" />
+            <video filename="UseRemote3" id="2" />
+            <video filename="UseRemote5" id="3" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="thinking_about_the_activity" prompt="Remember, even thinking about the activity while you are trying will help improve the connections in your brain" />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="selecting_channel_difficult_turn_tv_on_off" prompt="If selecting a channel is difficult, just trying turning the TV on and off 10 times in a row." />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="dialing_telephone" prompt="OKAY, could you try dialing the telephone instead to get some practice isolating your fingers." />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="arent_going_to_try_you_dont_get_to_choose_show" prompt="OK, but if you aren't even going to try, you don't get to choose the show" />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="dialing_telephone" prompt="OKAY, could you try dialing the telephone instead to get some practice isolating your fingers." />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Place remote on non-slip surface, use hand on top to touch buttons" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Hold remote in affected hand, push buttons with less affected hand" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Place remote on non-slip surface, use hand on top to touch buttons" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Hold remote in affected hand, push buttons with less affected hand" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Nice choice!</questions>
+          <soundfile>nice_choice</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Excited to see you work!</questions>
+          <soundfile>Excited_see_you_work</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+    <Mal id="8">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Wash your hands?</questions>
+          <soundfile>wash_weaker_hand</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" />
+            <button id="1" videofollowupid="0" text="Very slow and difficult" followup="2" rating="2" eliminatemal="false" />
+            <button id="2" videofollowupid="1" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" />
+            <button id="3" videofollowupid="2" text="Almost normal" followup="2" rating="4" eliminatemal="false" />
+            <button id="4" videofollowupid="3" text="Normal" followup="2" rating="5" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_weaker_arm_wash_hands</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="WashHands1" id="0" />
+            <video filename="WashHands3" id="1" />
+            <video filename="WashHands4" id="2" />
+            <video filename="WashHands5" id="3" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="what_is_there_to_be_afraid_of" prompt="What is there to be afraid of?  Give it a try" />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="do_what_you_can_with_weaker_finish_stronger" prompt="Do what you can with your weaker hand and then finish up with your stronger.  It will get easier with time." />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="gross_wash_your_hands_before_eating" prompt="Gross! Didn't your mom teach you to wash your hands before you eat?" />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="dont_try_cant_succeed" prompt="If you don't try, you can't succeed." />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="hate_to_get_sick" prompt="Good hygiene is important.  Please try to wash your hands, I would hate for you to get sick." />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Use pump soap to make it easier to spread over hands" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Lather with the affected hand to the greatest extent possible before beginning with the other hand" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions>Hard work is the key to recovery. Which of these strategies would you be willing to try?</questions>
+          <soundfile>hard_work_key_to_recovery</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Use pump soap to make it easier to spread over hands" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Lather with the affected hand to the greatest extent possible before beginning with the other hand" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Hard work is the key to recovery. Which of these strategies would you be willing to try?</questions>
+          <soundfile>hard_work_key_to_recovery</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Excited to see you work!</questions>
+          <soundfile>Excited_see_you_work</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Can't wait to see you try!</questions>
+          <soundfile>Cant_wait_to_see_you_try</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+
+    <Mal id="9">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Turn the water on/off with a knob/lever on a faucet?</questions>
+          <soundfile>water_on_off_with_knob</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="faucet" prompt="Is there a faucet in your house that might be easier?  Don't give up." />
+            <button id="1" videofollowupid="1" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" soundfile="faucet" prompt="Is there a faucet in your house that might be easier?  Don't give up." />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="admirable_efforts" prompt="Your efforts are admirable.  Tomorrow you can work on trying to move faster." />
+            <button id="3" videofollowupid="3" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="Excellent_make_sure_you_practice" prompt="Excellent- make sure you practice on a variety of faucets to challenge your self" />
+            <button id="4" videofollowupid="4" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="succes_feels_so_good" prompt="Success feels so good!" />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_turn_water_on_off_with_knob_lever_on_faucet</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="TurnOnFaucet1" id="0" />
+            <video filename="TurnOnFaucet2" id="1" />
+            <video filename="TurnOnFaucet3" id="2" />
+            <video filename="TurnOnFaucet4" id="3" />
+            <video filename="TurnOnFaucet5" id="4" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="Practice_in_shower_not_sink_wont_burn_yourself_can_practice" prompt="Practice turning on the cold water at the sink rather than in the shower.  You won't burn yourself and you can practice." />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="Get_started_using_both_hands_finish_weaker_hand" prompt="Could you get it started using both hands and then finish it with your weaker hand?" />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="need_drink_water_live" prompt="You need to drink water to live." />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="someone_does_it_for_yout_they_getting_practice_your_Turn" prompt="If someone does it for you, they are getting the practice instead of you.  It's your turn." />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="try_indoor_plumbing" prompt="You should try indoor plumbing.  It is amazing." />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Stabilize the affected arm with unaffected arm to enable knob rotation" followup="6" rating="0" eliminatemal="false" soundfile="stronger_hand_over_top_weaker_hand_doing_both" prompt="I would replace with: can you try putting your stronger hand over top of your weaker hand and doing it with both." />
+            <button id="1" videofollowupid="-1" text="Adapt knob to improve grasp" followup="6" rating="0" eliminatemal="false" soundfile="lever_faucet_house_easier_practice" prompt="I would replace with: Is there a lever faucet  in your house that might be easier for you to practice on." />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Stabilize the affected arm with unaffected arm to enable knob rotation" followup="6" rating="0" eliminatemal="false" soundfile="stronger_hand_over_top_weaker_hand_doing_both" prompt="I would replace with: can you try putting your stronger hand over top of your weaker hand and doing it with both." />
+            <button id="1" videofollowupid="-1" text="Adapt knob to improve grasp" followup="6" rating="0" eliminatemal="false" soundfile="lever_faucet_house_easier_practice" prompt="I would replace with: Is there a lever faucet  in your house that might be easier for you to practice on." />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Looking forward to seeing you try!</questions>
+          <soundfile>Cant_wait_to_see_you_try</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Can't wait to see your effort!</questions>
+          <soundfile>Cant_wait_to_see_your_effort</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+
+    <Mal id="10">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Dry your hands?</questions>
+          <soundfile>dry_hands_past_2_days</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="Celebrate_any_attempt_make" prompt="Celebrate any attempt you make." />
+            <button id="1" videofollowupid="1" text="Very slow and difficult" followup="2" rating="2" eliminatemal="false" soundfile="spread_towel_on_counter_wiping_hand_against_surface" prompt="Keep up your efforts.  Could you try spreading the towel on a counter wiping your hand against the surface?" />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="motion_slow_succeded_take_pride_efforts" prompt="Even if the motion was slow, you succeeded.   Take pride in your efforts" />
+            <button id="3" videofollowupid="3" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="next_time_you_wont_think_about_the_activity_you_are_doing_well" prompt="Hopefully next time you won't even have to think about the activity you will be doing it so well." />
+            <button id="4" videofollowupid="4" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="thats_exceptional_one_more_success" prompt="That is exceptional.  One more success." />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_Ability_dry hands</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="DryHands1" id="0" />
+            <video filename="DryHands2" id="1" />
+            <video filename="DryHands3" id="2" />
+            <video filename="DryHands4" id="3" />
+            <video filename="DryHands5" id="4" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="wet_hands_not_so_bad_not_trying_is" />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="make_a_deal_with_yourself" />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="new_activity_this_week_help_brain_new_connections_give_try" />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="you_charge_recovery_allow_people_do_it_do_yourself" />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="new_activity_this_week_help_brain_new_connections_give_try" />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Place a towel on a surface to bring hand over towel" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Bring elbows against sides for stability during drying" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Place a towel on a surface to bring hand over towel" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Bring elbows against sides for stability during drying" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Just imagine what you can accomplish!</questions>
+          <soundfile>just_imagine_what_you_could_accomplish</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Your potential is limitless!</questions>
+          <soundfile>potential_is_limitless</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+
+
+
+
+    <Mal id="11">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Put on your socks?</questions>
+          <soundfile>weaker_hand_to_put_on_socks</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="putting_sock_hard_low_sock_or_stretchy" prompt="Putting on a sock is a hard activity.  Could you try a low sock or one that is stretchy?" />
+            <button id="1" videofollowupid="0" text="Very slow and difficult" followup="2" rating="2" eliminatemal="false" soundfile="Keep_at_it_part_of_activity_practice_making_difference" prompt="Keep at it.  Even if you can only do part of the activity, the practice is making a difference." />
+            <button id="2" videofollowupid="1" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="Try_putting_sock_during_day_not_in_hurry_go_somewhere" prompt="You may want to practice putting on a sock sometime during the day when you are not in a hurry to finish dressing and go somewhere." />
+            <button id="3" videofollowupid="1" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="try_pantyhose_unless_youre_a_man" prompt="Super- now do you want to try pantyhose.  That would be a challenge!  Oh wait, unless you are a man.  Then that would just be silly." />
+            <button id="4" videofollowupid="2" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="Great_news_hard_activity" prompt="That is great news.  This is a hard activity." />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_put_on_socks</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="PutOnSocks1" id="0" />
+            <video filename="PutOnSocks3" id="1" />
+            <video filename="PutOnSocks5" id="2" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="cut_stretch_elastic_old_sock_practice_something_easier" prompt="could you stretch or cut the elastic on an old sock so you can practice with something easier?" />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="cut_stretch_elastic_old_sock_practice_something_easier" prompt="could you stretch or cut the elastic on an old sock so you can practice with something easier?" />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="feet_must_get_cold_sometimes_want_try_slipper_instead" prompt="Your feet must get cold sometimes.  Want to try putting on a slipper instead?" />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="No_reason_cant_puck_sock_right_on_again_try_yourself" prompt="There is no reason you can't put that sock right back on and try it again yourself." />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="feet_must_get_cold_sometimes_want_try_slipper_instead" prompt="Your feet must get cold sometimes.  Want to try putting on a slipper instead?" />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Cross your leg to bring it closer" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Hold leg with affected hand while other hand manages sock" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions>I am confident you can improve with practice. Which of these strategies would you be willing to try?</questions>
+          <soundfile>Confident_improve_practice_which_strategies_willing_try</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Cross your leg to bring it closer" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Hold leg with affected hand while other hand manages sock" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Nice choice!</questions>
+          <soundfile>nice_choice</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Can't wait to see your effort!</questions>
+          <soundfile>Cant_wait_to_see_your_effort</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+
+    <Mal id="12">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Take off your socks?</questions>
+          <soundfile>take_off_socks</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="picture_yourself_pulling_off_sock_mental_practice" prompt="this is a hard task.  If you just can't do it yet, try mental practice.  Picture yourself straightening that arm and reach down to your foot. Get that elbow straight. Picture your hand opening and grabbing the sock.  What does it feel like?  Is it smooth or does it have ridges?  Remind your fingers to keep a good grip on that sock and picture yourself pulling it off.  If you were doing this task, would you just pull it off straight from the toes or would you slip your thumb under the elastic at the top.  Picturing the details is critical to the practice.  Spend a few minutes doing this a couple times today." />
+            <button id="1" videofollowupid="1" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" />
+            <button id="3" videofollowupid="3" text="Almost normal" followup="2" rating="4" eliminatemal="false" />
+            <button id="4" videofollowupid="4" text="Normal" followup="2" rating="5" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_take_off_your_socks</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="TakeOffSocks1" id="0" />
+            <video filename="TakeOffSocks2" id="1" />
+            <video filename="TakeOffSocks3" id="2" />
+            <video filename="TakeOffSocks4" id="3" />
+            <video filename="TakeOffSocks5" id="4" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="Dont_succeeed_worst_thing_sock_on_foot_try_3_minutes" prompt="If you don't succeed, the worst thing that happens is that you have a sock on your foot.  That's not so bad.  Try it for 3 minutes before you use your other hand or ask someone for help." />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="Dont_succeeed_worst_thing_sock_on_foot_try_3_minutes" prompt="If you don't succeed, the worst thing that happens is that you have a sock on your foot.  That's not so bad.  Try it for 3 minutes before you use your other hand or ask someone for help." />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="dont_like_wearing_socks_find_old_one_on_and_off_5_times_practice" prompt="Even if you don't like to wear socks, find an old one lying around and put it on and off 5 times each day just for practice." />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="picture_yourself_pulling_off_sock_mental_practice" prompt="this is a hard task.  If you just can't do it yet, try mental practice.  Picture yourself straightening that arm and reach down to your foot. Get that elbow straight. Picture your hand opening and grabbing the sock.  What does it feel like?  Is it smooth or does it have ridges?  Remind your fingers to keep a good grip on that sock and picture yourself pulling it off.  If you were doing this task, would you just pull it off straight from the toes or would you slip your thumb under the elastic at the top.  Picturing the details is critical to the practice.  Spend a few minutes doing this a couple times today." />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="dont_like_wearing_socks_find_old_one_on_and_off_5_times_practice" prompt="Even if you don't need to put on socks today, get one out of your drawer and put it on and off 5 times just for practice." />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Hook a finger or thumb in sock and move foot away" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Use shoe horn in hand to slip sock off" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Hook a finger or thumb in sock and move foot away" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Use shoe horn in hand to slip sock off" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Can't wait to see you try!</questions>
+          <soundfile>Cant_wait_to_see_you_try</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Excited to see you work!</questions>
+          <soundfile>Excited_see_you_work</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+    <Mal id="13">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Put on your shoes?</questions>
+          <soundfile>put_on_shoes</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="go_through_the_motions_for_practice_practice_with_slipper_or_loose_shoe" prompt="This is a hard task.  Just going through the motions of trying is good practice.  Just make sure you take the time to give it several good tries before you use your other hand.  Maybe you could practice with a slipper or other loose shoe for a while" />
+            <button id="1" videofollowupid="1" text="Very slow and difficult" followup="2" rating="2" eliminatemal="false" soundfile="you_did_it_fine_work_proud_of_your_commitment" prompt="But you did it!  Fine work.  I am proud of your commitment to take the time to practice." />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="congratulate_yourself_for_choosing_path_towards_recovery" prompt="I know you could do it faster with your other hand, but congratulate yourself for choosing the path towards recovery by working on each task." />
+            <button id="3" videofollowupid="3" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="real_challenge_try_tying_shoe" prompt="If you are up for a real challenge, why don't you try tying that shoe too." />
+            <button id="4" videofollowupid="4" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="Fine_work_shoelace_bet_you_could_do_it" prompt="Fine work, my friend.  Did you try tying the shoelaces?  You are getting so good, I bet you could do it." />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>rate_ability_put_on_your_shoes</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="PutOnShoes1" id="0" />
+            <video filename="PutOnShoes2" id="1" />
+            <video filename="PutOnShoes3" id="2" />
+            <video filename="PutOnShoes4" id="3" />
+            <video filename="PutOnShoes5" id="4" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="nothing_bad_happen_if_fail_at_task_if_fail_try_nothing_good" />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="try_with_slipper_or_other_loose_shoe" />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="love_to_be_barefoot" />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="easy_to_fix_take_shoe_off_right_now" />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="love_to_be_barefoot" />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Cross your leg to bring foot within reach" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Use a shoe horn in affected hand" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Cross your leg to bring foot within reach" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Use a shoe horn in affected hand" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Good thinking!</questions>
+          <soundfile>Good_thinking!</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Can't wait to see your progress!</questions>
+          <soundfile>cant_wait_to_see_progress</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+
+    <Mal id="14">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Get up from a chair with arm rests?</questions>
+          <soundfile>get_up_from_chair_with_arm_rests</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="Positioning_hand_trying_push_improving_abilities" prompt="That's OK.  Just positioning your hand and trying to push is improving your abilities." />
+            <button id="1" videofollowupid="0" text="Very slow and difficult" followup="2" rating="2" eliminatemal="false" soundfile="Be_careful_not_fall_need_to_get_arm_strong_enough" prompt="Be careful not to fall.  We need to get that arm strong so you stay well." />
+            <button id="2" videofollowupid="1" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="getting_hand_into_right_position_to_help_push_yourself" prompt="That's OK.  Pushing yourself up is a great way to strengthen your arm." />
+            <button id="3" videofollowupid="2" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="Fabulous_why_dont_do_it_again" prompt="Fabulous-  Why don't you do it again?" />
+            <button id="4" videofollowupid="3" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="nothing_can_stop_your_from_recovering_more_abilities" prompt="There is nothing that can stop you from recovering more of your abilities." />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_get_up_from_chair_with_armrests</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="GetUpFromChair1" id="0" />
+            <video filename="GetUpFromChair3" id="1" />
+            <video filename="GetUpFromChair4" id="2" />
+            <video filename="GetUpFromChair5" id="3" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="afraid_to_fall_decide_if_you_want_to_recover" prompt="If you were afraid you would fall then you made a good choice not to try it.  If you just didn't want to use your arm you will need to decide if you really want to recover and are willing to put in the work necessary to succeed." />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="getting_hand_into_right_position_to_help_push_yourself" prompt="Just getting your hand into the right position to help push yourself up is good exercise.  Even if it feels like your arm isn't doing anything you are making it stronger by trying." />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="Saying_never_sit_down_or_stand_up_dont_believe_give_it_try" prompt="Are you saying you never sit down or you never stand up?  Either way I don't believe you.  Come on, give it a try" />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="someone_used_your_arm_to_push_you_out_of_chair" prompt="Someone used your arm to push you out of a chair.  How rude of them.  Oh wait, I get it.  Someone helped you out of your chair so you didn't need to use your arm.  They were probably just trying to be nice, but why did you let them do that?  Don't you want to get stronger?" />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Use other hand to get affected hand in place on arm rest" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Watch affected hand during the sit-to-stand action to improve control" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Use other hand to get affected hand in place on arm rest" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Watch affected hand during the sit-to-stand action to improve control" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Can't wait to see you try!</questions>
+          <soundfile>Cant_wait_to_see_you_try</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Nice choice!</questions>
+          <soundfile>nice_choice</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+
+    <Mal id="15">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Pull a chair away from a table before sitting down?</questions>
+          <soundfile>pull_chair_away_from_table</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="arent_strong_enough_pull_chair_use_both_hands_give_weaker_arm_chance" prompt="If you aren't strong enough to pull the chair out with just your weaker arm, make sure you at least use both hands to do it. Give your weaker arm the chance to help with the task." />
+            <button id="1" videofollowupid="1" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" soundfile="arent_strong_enough_pull_chair_use_both_hands_give_weaker_arm_chance" prompt="That's okay.  For now, just practice getting your hand on the chair and trying to keep your grip strong while the other hand does some of the work." />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="take_time_practice_is_going_to_add_up_really_make_difference" prompt="Take your time.  This practice is going to add up over time and really make a difference." />
+            <button id="3" videofollowupid="3" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="Can_pull_chair_out_for_guest_or_someone_for_more_practice" prompt="Fantastic.  In addition, you can always pull out the chair for a guest or special someone just for more practice." />
+            <button id="4" videofollowupid="4" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="chivalrous_pull_out_chairs_for_guests" prompt="Since you are such a pro make sure you are chivalrous and pull out the chairs for any guests." />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_pull_chair_away_from_table_before_sitting_down</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="PullingChairOut1" id="0" />
+            <video filename="PullingChairOut2" id="1" />
+            <video filename="PullingChairOut3" id="2" />
+            <video filename="PullingChairOut4" id="3" />
+            <video filename="PullingChairOut5" id="4" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="Come_on_now_what_kind_of_excuse_is_that_for_not_trying" prompt="Come on now.  What kind of excuse it that for not trying.  Trying doesn't hurt, but avoiding the situation does." />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="try_reach_up_to_chair_think_about_activity_mental_practice_helps_you_get_better" prompt="OK,  Could you at least try to reach up to the chair and get your hand into position.  Remember to think about the activity and picture yourself succeeding.  Mental practice does help you get better." />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="dont_sit_down_wasnt_born_yesterday" prompt="You never sit down?  I wasn't born yesterday, everybody sits down sometimes." />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="how_chivalrous_of_them_return_the_favor_next_time" prompt="How chivalrous of them.  Next time return the favor and do it for them." />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="dont_sit_down_wasnt_born_yesterday" prompt="You never sit down?  I wasn't born yesterday, everybody sits down sometimes." />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Place whole hand on backrest and move body away while drawing chair to you" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Stabilize body by moving feet apart before you attempt" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Place whole hand on backrest and move body away while drawing chair to you" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Stabilize body by moving feet apart before you attempt" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Looking forward to seeing you try!</questions>
+          <soundfile>Cant_wait_to_see_you_try</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Excited to see you work!</questions>
+          <soundfile>Excited_see_you_work</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+
+    <Mal id="16">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Pull a chair toward a table after sitting down?</questions>
+          <soundfile>pull_chair_toward_table</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="hand_arm_not_helping_much_getting_practice_by_trying" prompt="Even if you think your hand and arm aren't helping much, you are getting practice by trying." />
+            <button id="1" videofollowupid="1" text="Very slow and difficult" followup="2" rating="2" eliminatemal="false" soundfile="Take_time_will_be_worth_it" prompt="Take your time. It will be worth it" />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="Keep_at_it_hard_work_will_pay_off" prompt="Keep at it, your hard work will pay off." />
+            <button id="3" videofollowupid="3" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="Keep_at_it_hard_work_will_pay_off" prompt="That is super!  Don't be content with almost- keep practicing." />
+            <button id="4" videofollowupid="4" text="Normal" followup="2" rating="5" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_of_weaker_arm_pull_chair_toward_table</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="ScootChairIn1" id="0" />
+            <video filename="ScootChairIn2" id="1" />
+            <video filename="ScootChairIn3" id="2" />
+            <video filename="ScootChairIn4" id="3" />
+            <video filename="ScootChairIn5" id="4" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="scoot_chair_in_towards_table_crumbs_in_your_lap" prompt="If you don't try to scoot your chair in towards the table, you are going to end up with a lot of crumbs in your lap.  Give it a try." />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="use_stronger_hand_to_guide_weaker_hand" prompt="Could you try using your stronger hand to guide your weaker hand?" />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="scoot_chair_in_towards_table_crumbs_in_your_lap" prompt="If you don't try to scoot your chair in towards the table, you are going to end up with a lot of crumbs in your lap.  Give it a try." />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="nice_of_you_to_give_oppotunity_to_use_their_arm_practice_a_bit_yourself_too" prompt="It was nice of you to give someone else the opportunity to use their arm, but let's be honest, you should practice a bit yourself too." />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="do_you_eat_standing_up" prompt="Do you eat standing up?  Sitting down to eat is good for your digestion." />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Watch affected hand during the action to improve control" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Use forearm on armrest, pull arm toward body while scooting forward" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Watch affected hand during the action to improve control" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Use forearm on armrest, pull arm toward body while scooting forward" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Good thinking!</questions>
+          <soundfile>Good_thinking!</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Can't wait to see you try!</questions>
+          <soundfile>Cant_wait_to_see_you_try</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+
+    <Mal id="17">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Pick up a glass, bottle, drinking cup or can?</questions>
+          <soundfile>pick_up_glass_bottle_drinking_cup_can</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="picking_up_empty_plastic_cup_for_practice" prompt="Could you try picking up an empty plastic cup for practice?  If you need to, you could use your other hand to get the cup situated in your weaker hand.  Now practice lifting the cup up from the table to your mouth.  See how many times you can do this without dropping the cup. I bet you can get a new high score tomorrow." />
+            <button id="1" videofollowupid="1" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" soundfile="practice_with_empty_glass_or_bottle" prompt="It's okay to practice with an empty glass  or water bottle with the lid on until you get more control.  Just don't give up!" />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="challenge_yourself_filling_glass_higher_each_day_see_how_well_you_can_manage" prompt="Challenge yourself by filling the glass a little higher each day and see how well you can manage." />
+            <button id="3" videofollowupid="3" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="calls_for_celebration_pick_up_glass_toast_progress" prompt="That calls for a celebrate.  Pick up your glass and toast your progress." />
+            <button id="4" videofollowupid="4" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="well_then_lift_glass_and_toast_success" prompt="Well then, lift your glass and toast to your success" />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_glass_bottle_drinking_cup_can</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="PickUpCup1" id="0" />
+            <video filename="PickUpCup2" id="1" />
+            <video filename="PickUpCup3" id="2" />
+            <video filename="PickUpCup4" id="3" />
+            <video filename="PickUpCup5" id="4" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="dont_have_to_practice_social_situation_sit_at_table_between_meal_time" prompt="You don't have to practice in a social situation.  Sit at the table between meal time and practice with an empty cup." />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="mental_practice_reaching_towards_cup" prompt="This is a great activity for mental practice.  Sit at the table a think about reaching towards the cup.   Get that elbow straight.  Think about turning your arm so your hand is in a good position to grab the cup.  Now picture your fingers opening wide enough to reach around the cup.  Concentrate on all of the little details.  How heavy would the cup feel.  Would you grab the handle or reach around the glass.  The more details you practice in your mind, the more effective the practice will be." />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="you_must_be_dehydrated_go_get_a_drink" prompt="You must be dehydrated.  Stop everything right now and go get a drink.  Just make sure you use your weaker hand to pick it up." />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="try_using_cup_with_lid_do_it_yourself" prompt="Could you try using a cup with a lid so you can do it your self?" />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="you_must_be_dehydrated_go_get_a_drink" prompt="You must be dehydrated.  Stop everything right now and go get a drink.  Just make sure you use your weaker hand to pick it up." />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Don't fill the glass completely to make it lighter" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Support the affected arm with the unaffected arm while picking it up" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Don't fill the glass completely to make it lighter" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Support the affected arm with the unaffected arm while picking it up" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Can't wait to see your progress!</questions>
+          <soundfile>cant_wait_to_see_progress</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Nice choice!</questions>
+          <soundfile>nice_choice</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+
+    <Mal id="18">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Brush your teeth?</questions>
+          <soundfile>brush_teeth</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="cant_hold_toothbrush_use_stronger_hand_dentist_thrilled_extra_brushing" prompt="If you can't hold the toothbrush well enough to get your teeth clean, you could first use your stronger hand to get your teeth nice and sparkly.  When your teeth are clean, use your stronger hand to put the toothbrush in your weaker and practice with that hand for a second round.  Your dentist is going to be thrilled with all of the extra brushing." />
+            <button id="1" videofollowupid="1" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" soundfile="Build_up_handle_of_toothbrush_to_help_grasp" prompt="Before you let your other hand help, try your best to pick up the toothbrush.  Remember to picture yourself being successful while you try.  After a few tries it is okay to use your other hand to position the brush in your weaker hand.  Just make sure you try first." />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="keep_up_good_work_may_take_while_see_improvements_hard_work" prompt="Keep up the good effort. It may take a while to see improvement, but your efforts will pay off." />
+            <button id="3" videofollowupid="2" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="Great" prompt="Great." />
+            <button id="4" videofollowupid="3" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="flash_big_smile_sparkling_teeth_must_be_pleased" prompt="Flash a big smile with those sparkling teeth.  You must be so pleased." />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_brush_teeth</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="BrushTeeth1" id="0" />
+            <video filename="BrushTeeth2" id="1" />
+            <video filename="BrushTeeth3" id="2" />
+            <video filename="BrushTeeth5" id="3" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="Try_brushing_teeth_when_not_in_hurry_or_tired_take_time_do_best" prompt="Try brushing your teeth when you are not in a hurry or too tired.  Just take your time and do your best.  If you don't think you got your teeth clean enough, you can do it again with your stronger hand." />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="Try_brushing_teeth_when_not_in_hurry_or_tired_take_time_do_best" prompt="Try brushing your teeth when you are not in a hurry or too tired.  Just take your time and do your best.  If you don't think you got your teeth clean enough, you can do it again with your stronger hand." />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Build up the handle of the toothbrush to help grasp" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Brush teeth while sitting with forearm supported on table or other surface" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Build up the handle of the toothbrush to help grasp" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Brush teeth while sitting with forearm supported on table or other surface" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Looking forward to seeing you try!</questions>
+          <soundfile>Cant_wait_to_see_you_try</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Excited to see you work!</questions>
+          <soundfile>Excited_see_you_work</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+
+    <Mal id="19">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Use a key or keypad?</questions>
+          <soundfile>use_key_for_door</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="Practice_break_task_down_into_parts" prompt="This is an extremely hard task.  Don't be too hard on yourself.   One way to practice is to break this task down into parts.  Today you could practice picking the keep up from a table.  Tomorrow you can use your stronger hand to situate the key in your weaker hand and focus on trying to line the key up with the lock.  The next day use your stronger hand to put the key in the lock and practice turning the key with your weaker hand.  As you improve, you can put the pieces together." />
+            <button id="1" videofollowupid="1" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" soundfile="Practice_break_task_down_into_parts" prompt="This is an extremely hard task.  Don't be too hard on yourself.   One way to practice is to break this task down into parts.  Today you could practice picking the keep up from a table.  Tomorrow you can use your stronger hand to situate the key in your weaker hand and focus on trying to line the key up with the lock.  The next day use your stronger hand to put the key in the lock and practice turning the key with your weaker hand.  As you improve, you can put the pieces together." />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="Keep_at_it_part_of_activity_practice_making_difference" prompt="Keep at it.  Some people think it helps to build up the end of the key you hold by buying a key cover at the hardware store or by wrapping making tape around the end.  If it is a little bulkier, you may be able to hold it more securely." />
+            <button id="3" videofollowupid="3" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="Great_more_than_one_lock_make_sure_practice_each_one" prompt="Great!  If you have more than one lock, make sure you practice with each one." />
+            <button id="4" videofollowupid="4" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="wow_hard_task_must_be_doing_great" prompt="Wow-  this is a hard task.  You must be doing great." />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_key_unlock_door</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="UnlockDoor1" id="0" />
+            <video filename="UnlockDoor2" id="1" />
+            <video filename="UnlockDoor3" id="2" />
+            <video filename="UnlockDoor4" id="3" />
+            <video filename="UnlockDoor5" id="4" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="stronger_hand_over_top_weaker_hand_doing_both" prompt="This is a very hard task.  Try doing it with 2 hands.  Use your stronger hand over top of your weaker hand and do it together. As you get better, try doing more and more with just your weaker hand." />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="break_task_down_into_parts_key_and_lock" prompt="This is an extremely hard task.  Don't get discouraged.   One way to practice is to break this task down into parts.  Today you could practice picking the keep up from a table.  Tomorrow you can use your stronger hand to situate the key in your weaker hand and focus on trying to line the key up with the lock.  The next day use your stronger hand to put the key in the lock and practice turning the key with your weaker hand.  As you improve, you can put the pieces together." />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="lock_and_key_practice_winding_up_music_box" prompt="That doesn't mean you can't start trying it out.  There must be a lock and a key you could practice with somewhere.   You could also try winding up a music box for practice. It uses a similar motion" />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="need_help_getting_in_door_sit_down_at_door_practice" prompt="If you need help getting in the door, it is okay to have someone do it for you.  Once you are inside, however, sit down at the door and practice for yourself." />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="lock_and_key_practice_winding_up_music_box" prompt="There must be a lock and a key you could practice with somewhere.  Do you have a jewelry or tool box with a key?   You could also try winding up a music box for practice. It uses a similar motion." />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Stabilize the forearm of the affected arm with other arm during task" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Use a built up key to improve grasp" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Stabilize the forearm of the affected arm with other arm during task" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Use a built up key to improve grasp" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Can't wait to see you try!</questions>
+          <soundfile>Cant_wait_to_see_you_try</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Can't wait to see your progress!</questions>
+          <soundfile>cant_wait_to_see_progress</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+
+    <Mal id="20">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Carry an object?</questions>
+          <soundfile>carry_object_in_weaker_hand</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="carry_something_soft_like_a_pillow" prompt="If this task is giving you troubles, try to make it easier.  Could you put things in a bag and hold the handles?  You could also try to carry something soft like a pillow.  That way if you drop it, it won't matter." />
+            <button id="1" videofollowupid="0" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" soundfile="get_object_situated_with_stronger_hand_work_way_up_to_heavir_objects" prompt="That's okay.  Get the object situated with your stronger hand and just see how long you can carry it without dropping it.  Work your way up to heavier objects." />
+            <button id="2" videofollowupid="1" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="heavier_objects_in_bag_build_strength_little_at_a_time" prompt="You could practice carrying heavier items in a bag.  Build up your strength a little bit at a time." />
+            <button id="3" videofollowupid="2" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="fantastic_continue_to_practice" prompt="Fantastic.  Continue to practice." />
+            <button id="4" videofollowupid="3" text="Normal" followup="2" rating="5" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_carry_object_with_your_hand</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="CarryObject1" id="0" />
+            <video filename="CarryObject3" id="1" />
+            <video filename="CarryObject4" id="2" />
+            <video filename="CarryObject5" id="3" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="carry_something_soft_like_a_pillow" prompt="If this task is giving you trouble, try to make it easier.  Could you put things in a bag and hold the handles?  You could also try to carry something soft like a pillow.  That way if you drop it, it won't matter." />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="carry_something_soft_like_a_pillow" prompt="If this task is giving you troubles, try to make it easier.  Could you put things in a bag and hold the handles?  You could also try to carry something soft like a pillow.  That way if you drop it, it won't matter." />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="practice_carrying_things_from_one_room_to_the_next" prompt="You can practice caring things from one room to the next and then just putting them back again." />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="dont_need_reason_to_practice_can_carry_things_from_one_room_to_the_next_back_" prompt="You don't have to have a reason to practice.  You can practice caring things from one room to the next and then just putting them back again." />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="three_steps_look_around_pick_something_up_feel_good" prompt="That is easy to fix. Try these three steps. Look around.  Pick something up.  Feel good about yourself." />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Use two hands to carry heavier objects" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Hold arm against body to stabilize object during carrying" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Use two hands to carry heavier objects" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Hold arm against body to stabilize object during carrying" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Nice choice!</questions>
+          <soundfile>nice_choice</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Looking forward to seeing you try!</questions>
+          <soundfile>Excited_see_you_work</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+
+    <Mal id="21">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Use a fork or spoon for eating?</questions>
+          <soundfile>fork_or_spoon_for_eating</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="dessert_particularly_motivating" prompt="You could try using your good hand to get the food on the fork and then using your other hand to try to get it to your mouth. I find dessert particularly motivating." />
+            <button id="1" videofollowupid="1" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" soundfile="when_feeling_full_try_do_last_few_bites_with_only_weaker_hand" prompt="When you are feeling full, try to do the last few bites with only the weaker hand." />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="Make_sure_try_different_silverware_fork_with_built_up_handle_easier" prompt="Make sure you try different silverware.  Sometimes a fork with a built up handle is easier." />
+            <button id="3" videofollowupid="3" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="go_out_for_supper_to_celebrate_success" prompt="Why not go out for supper to celebrate your success?" />
+            <button id="4" videofollowupid="4" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="ready_to_try_chopsticks" prompt="Are you ready to try chopsticks?" />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_use_fork_or_spoon_for_eating</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="UseSpoon1" id="0" />
+            <video filename="UseSpoon2" id="1" />
+            <video filename="UseSpoon3" id="2" />
+            <video filename="UseSpoon4" id="3" />
+            <video filename="UseSpoon5" id="4" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="worried_making_mess_pretending_to_eat_without_using_food_sit_at_table_hold_spoon_scoop_imaginary_soup" prompt="If you are worried about making a mess, you can start out by just pretending to do it with actually using food.  Sit at the table, hold the spoon and try to scoop imaginary soup.  Bring it up to your mouth and repeat until your bowl is empty." />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="scoop_imaginery_soup" prompt="If you can't do this task with food, you can practice without food.  Sit at the table, place the spoon in your hand and try to scoop imaginary soup.  Bring it up to your mouth and repeat until your bowl is empty. Use mental imagery to see the movement how you would like it to go. Picture yourself keeping the spoon level so you don't spill. Picture yourself raising the spoon smoothly to your mouth.  If you concentrate and practice, pretty soon you won't have to imagine your success you will see it." />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="stab_french_fries" prompt="Come on now. Everyone eats. If you don't use silverware you must be eating way to much fast food." />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="must_be_hungry" prompt="You don't have to practice when you are hungry or in a hurry.  Sit down at a convenient time and try to cut soft food such as a cheese stick or banana.  You can even try spreading peanut butter on those banana slices.  It is so delicious you will probably want to do it often." />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="stab_french_fries" prompt="Come on now. Everyone eats. If you don't use silverware you must be eating way to much fast food.  You can always stab those French fries with a fork and cut your burger into bite size pieces.  You really don't have any excuse." />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Build up handle of utensil with a washcloth to improve grasp" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Maintain elbow on the table to stabilize arm" followup="6" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Eat from a bowl to make scooping easier" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Build up handle of utensil with a washcloth to improve grasp" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Maintain elbow on the table to stabilize arm" followup="7" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Eat from a bowl to make scooping easier" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Excited to see you work!</questions>
+          <soundfile>Excited_see_you_work</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Nice choice!</questions>
+          <soundfile>Nice_choice</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+    <Mal id="22">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Comb your hair?</questions>
+          <soundfile>comb_hair</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="break_down_brushing_movements" prompt="Could you break the movement down into easier parts to practice? If you keep dropping the comb or brush, sit down at a table and practice “brushing across the table top”.  If you can't get your arm up over your head you can stand facing a wall and walk your fingers up the wall to stretch your shoulder and strengthen your muscles." />
+            <button id="1" videofollowupid="1" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" soundfile="tie_strap_onto_brush_handle" prompt="Don't get discouraged. Remember to try different combs and brushes to find which one works best.  You can even tie a strap onto the handle to help keep your hand in place." />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="If_have_pet_might_like_good_brushing_too" prompt="That is just fine. If you have a pet, it might like a good brushing too." />
+            <button id="3" videofollowupid="2" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="excellent" prompt="Excellent." />
+            <button id="4" videofollowupid="3" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="nice_hair" prompt="Wow- Nice hair!" />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_comb_your_hair</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="CombHair1" id="0" />
+            <video filename="CombHair2" id="1" />
+            <video filename="CombHair3" id="2" />
+            <video filename="CombHair5" id="3" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="comb_hair_when_going_out" prompt="If you need to look nice, you can use your stronger hand to comb your hair when you are going out.  Practice with your weaker hand at a different time of the day.  But don't forget to practice." />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="Try_different_combs_brushes_thicker_handle_can_help_hold_on_better" prompt="Try different combs and brushes.  A thicker handle can help you hold on better." />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="try_brushing_a_pet" prompt="That must save quite a bit of time in the morning.  Since the activity is meant as an exercise, not beauty routine, do you think you could try brushing a pet?" />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="hair_is_around_all_day" prompt="Fortunately your hair is around all day and you can try it for yourself when you take a break from the game." />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="must_be_bald" prompt="Oh pardon me- You must be bald. I hope I didn't make you feel self-conscious." />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Sit with arm supported on a table or other surface" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Use long handled comb, build up handle with washcloth" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions> Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Sit with arm supported on a table or other surface" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Use long handled comb, build up handle with washcloth" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Can't wait to see you try!</questions>
+          <soundfile>Cant_wait_to_see_you_try</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Good thinking!</questions>
+          <soundfile>Good_thinking!</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+
+    <Mal id="23">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Pick up a cup by a handle?</questions>
+          <soundfile>pick_up_cup_by_handle</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="better_luck_with_water_bottle_use_stronger_hand_get_bottle_positioned_see_how_many_times_can_lift" prompt="You might have better luck lifting a closed water bottle.  Use your stronger hand to get the bottle positioned and then see how many times you can lift it up.  Even if you can only do part of the task, it still makes you stronger." />
+            <button id="1" videofollowupid="1" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" soundfile="Dont_get_discouraged_try_different_cup_sizes_and_some_with_handles_best_for_you" prompt="Don't get discouraged. Remember to try different cup sizes and some with handles to find which one is best for you." />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="keep_practicing_cup_with_lid_allows_practice_without_getting_wet" prompt="Keep practicing.  You may find that a cup with a lid allows you to practice without getting wet. The more you try, the more you will improve." />
+            <button id="3" videofollowupid="3" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="excellent_make_sure_vary_size_of_glasses_ready_every_ocassion" prompt="Excellent.  Make sure you vary the size of the glasses you choose so you are ready for every occasion." />
+            <button id="4" videofollowupid="4" text="Normal" followup="2" rating="5" eliminatemal="false" prompt="Cheers" />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_pick_up_cup_by_handle</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="PickUpCupHandle1" id="0" />
+            <video filename="PickUpCupHandle2" id="1" />
+            <video filename="PickUpCupHandle3" id="2" />
+            <video filename="PickUpCupHandle4" id="3" />
+            <video filename="PickUpCupHandle5" id="4" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="afraid_make_mess_practice_empty_cup_or_closed_water_bottle" prompt="If you are afraid you will make a mess practice with an empty plastic cup or closed water bottle." />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="Dont_give_up_use_other_hand_help_get_empty_plastic_cup_positioed_can_practice_lifting" prompt="Don't give up.  You can use your other hand to help get an empty plastic cup positioned so you can practice lifting it up toward your mouth." />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="you_must_be_dehydrated_go_get_a_drink" prompt="You must be dehydrated.  Stop everything right now and go get a drink.  Just make sure you use your weaker hand to pick it up." />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="try_using_cup_with_lid_do_it_yourself" prompt="Could you try using a cup with a lid so you can do it yourself?" />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="you_must_be_dehydrated_go_get_a_drink" prompt="You must be dehydrated.  Stop everything right now and go get a drink.  Just make sure you use your weaker hand to pick it up." />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Fill cup half way to decrease weight" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Use a light weight plastic cup with a large handle" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions>Your brain is making new connections even when you are not successful. Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Fill cup half way to decrease weight" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Use a light weight plastic cup with a large handle" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Your brain makes new connections when you attempt difficult tasks. Which of these strategies might help you succeed?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Can't wait to see your progress!</questions>
+          <soundfile>cant_wait_to_see_progress</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Looking forward to seeing you try!</questions>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+
+    <Mal id="24">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Buttoning?</questions>
+          <soundfile>buttoning</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="This_is_extremely_challenging_activity_dont_get_frustrated_try_using_weaker_hand_to_hold_your_shirt_while_other_hand_does_buttoning" prompt="This is an extremely challenging activity don't get frustrated.  Try using your weaker hand to hold your shirt while your other hand does the buttoning." />
+            <button id="1" videofollowupid="1" text="Very slow and difficult" followup="2" rating="2" eliminatemal="false" soundfile="This_extremelly_challenging_activity_dont_get_frustrated_Is_there_coat_jacket_with_larger_buttons_you_could_practice_on" prompt="This is an extremely challenging activity don't get frustrated. Is there a coat or jacket with larger buttons you could practice on?" />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="This_is_extremely_challenging_activity_dont_get_frustrated_Is_there_coat_or_jacket_with_larger_buttons_you_could_start_with_smaller_buttons_improve" prompt="This is an extremely challenging activity don't get frustrated. Is there a coat or jacket with larger buttons you could start with and move to smaller buttons as you improve?" />
+            <button id="3" videofollowupid="3" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="Great_make_sure_try_buttons_of_all_sizes" prompt="Great.  Make sure you try buttons of all sizes." />
+            <button id="4" videofollowupid="4" text="Normal" followup="2" rating="5" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_ability_button_shirt</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="ButtonShirt1" id="0" />
+            <video filename="ButtonShirt2" id="1" />
+            <video filename="ButtonShirt3" id="2" />
+            <video filename="ButtonShirt4" id="3" />
+            <video filename="ButtonShirt5" id="4" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="If_you_are_worried_about_not_being_able_to_get_dressed_you_can_wear_pull_over_shirt_and_practice_buttoning_up_coat_or_jacket" prompt="If you are worried about not being able to get dressed, you can wear a pull over shirt and practice buttoning up a coat or jacket." />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="Dont_get_frustrated_make_easier_find_coat_jacket_with_large_buttons_lay_coat_on_lap" prompt="Don't get frustrated.  This is an extremely hard activity.  To make it easier you can find a coat or jacket with large buttons to try.  You might want to lay the coat across your lap so you can see the buttons easily." />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="Why_not_find_coat_or_jacket_and_give_it_a_try_right_now" prompt="Why not find a coat or jacket and give it a try?" />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="make_time_today_find_coat_jacket_with_large_buttons_lay_coat_across_lap" prompt="That is okay if you are in a hurry, but make time today to try it yourself.  To make it easier you can find a coat or jacket with large buttons to try.  You might want to lay the coat across your lap so you can see the buttons easily." />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="Why_not_find_coat_or_jacket_and_give_it_a_try_right_now" prompt="Why not find a coat or jacket and give it a try right now?" />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Button a shirt using two hands before pulling it over your head" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Use buttoning tool in affected hand" followup="6" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Practice on clothing with larger buttons" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions>Which of these strategies would you be willing to try?</questions>
+          <soundfile>Brain_making_new_connections_even_when_not_successful</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Button a shirt using two hands before pulling it over your head" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Use buttoning tool in affected hand" followup="7" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Practice on clothing with larger buttons" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Excited to see you work!</questions>
+          <soundfile>Excited_see_you_work</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Nice choice!</questions>
+          <soundfile>nice_choice</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+
+
+    <Mal id="25">
+      <prompts>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Yes" followup="1" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="No" followup="3" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>0</id>
+          <questions>Eat finger foods?</questions>
+          <soundfile>eat_half_sandwhich_or_finger_foods</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="0" text="Not helpful" followup="2" rating="1" eliminatemal="false" soundfile="helps_use_rigid_food_like_pretzel_stick_can_use_other_hand_get_situated_before_raise_to_mouth" prompt="Sometimes it helps to use a rigid food like a pretzel stick.  Try to pick it up with your weaker hand.  You can use your other hand to put get it situated before you attempt to raise it to your mouth." />
+            <button id="1" videofollowupid="1" text="Needs help from other hand" followup="2" rating="2" eliminatemal="false" soundfile="Different_kinds_foods_pretzels_carrot_sticks_firmer_food_easier_pick_up" prompt="Try picking up different kinds of foods like pretzels or carrot sticks.   A firmer food may be easier to pick up." />
+            <button id="2" videofollowupid="2" text="Moved slowly with difficulty" followup="2" rating="3" eliminatemal="false" soundfile="If_having_trouble_keeping_food_on_plate_you_can_put_it_in_a_bowl" prompt="If you are having trouble keeping the food on your plate you can put it in a bowl.  You can push the item against the sides of the bowl to help hold it still while you grab it." />
+            <button id="3" videofollowupid="3" text="Almost normal" followup="2" rating="4" eliminatemal="false" soundfile="throw_in_some_cracker_jacks" prompt="Have you tried small foods like peanuts or popcorn?  Wow, through in some cracker jacks and you are ready for a trip to the ball park for some good finger exercises." />
+            <button id="4" videofollowupid="4" text="Normal" followup="2" rating="5" eliminatemal="false" soundfile="ready_to_try_chopsticks" prompt="Ready to move on to chopsticks?" />
+          </buttons>
+          <videos />
+          <id>1</id>
+          <questions>Rate the ability of your weaker arm</questions>
+          <soundfile>Rate_Ability_half_sandwich_or_other_finger_foods</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Worse" followup="-1" rating="-1" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Same" followup="-1" rating="0" eliminatemal="false" />
+            <button id="2" videofollowupid="-1" text="Better" followup="-1" rating="1" eliminatemal="false" />
+          </buttons>
+          <videos>
+            <video filename="FingerFood1" id="0" />
+            <video filename="FingerFood2" id="1" />
+            <video filename="FingerFood3" id="2" />
+            <video filename="FingerFood4" id="3" />
+            <video filename="FingerFood5" id="4" />
+          </videos>
+          <id>2</id>
+          <questions>Please watch the video and compare your ability</questions>
+          <soundfile>Watch_video_compare_ability</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="I was afraid I wouldn't succeed" followup="4" rating="0" eliminatemal="false" soundfile="afraid_getting_messy_pick_up_checkers_buttons_coins" prompt="If you are afraid of getting messy, you can pretend to pick up and eat food by putting checkers, buttons or coins in a bowl to pick up." />
+            <button id="1" videofollowupid="-1" text="It was too difficult" followup="5" rating="0" eliminatemal="false" soundfile="try_different_textured_foods_some_do_best_with_rigid_others_use_marshmellows" prompt="Try using different textured foods. Some people do best with a rigid food such as carrot sticks while others like to practice with marshmallows.  Put them in a bowl so you can push them against the sides and they don't move around too much." />
+            <button id="2" videofollowupid="-1" text="I never do this activity" followup="-1" rating="0" eliminatemal="false" soundfile="you_dont_eat" prompt="You never eat!  Come on, you must be pulling my leg." />
+            <button id="3" videofollowupid="-1" text="Someone did it for me" followup="-1" rating="0" eliminatemal="true" soundfile="didn't_just_eat_brussel_sprouts" prompt="I hope they at least let you pick what you wanted to eat and didn't just feed your Brussels sprouts.  Why not get a snack right now and try it yourself." />
+            <button id="4" videofollowupid="-1" text="No opportunity" followup="-1" rating="0" eliminatemal="false" soundfile="you_dont_eat" prompt="You never eat!  Come on, you must be pulling my leg. Why not get a snack right now and give it a try" />
+          </buttons>
+          <videos />
+          <id>3</id>
+          <questions>Why didn't you use your weaker arm?</questions>
+          <soundfile>Why_didnt_use_weaker_arm</soundfile>
+          <orientation>HORIZONTAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Keep elbow on the table to stabilize arm" followup="6" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Try bite sized pieces that are easier to grasp" followup="6" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>4</id>
+          <questions>Which of these strategies would you be willing to try?</questions>
+          <soundfile>Confident_improve_practice_which_strategies_willing_try</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <buttons>
+            <button id="0" videofollowupid="-1" text="Keep elbow on the table to stabilize arm" followup="7" rating="0" eliminatemal="false" />
+            <button id="1" videofollowupid="-1" text="Try bite sized pieces that are easier to grasp" followup="7" rating="0" eliminatemal="false" />
+          </buttons>
+          <videos />
+          <id>5</id>
+          <questions>Which of these strategies might work for you?</questions>
+          <soundfile>Brain_makes_new_connections_difficult_tasks</soundfile>
+          <orientation>VERTICAL</orientation>
+        </prompt>
+        <prompt>
+          <id>6</id>
+          <questions>Can't wait to see you try!</questions>
+          <soundfile>Cant_wait_to_see_you_try</soundfile>
+        </prompt>
+        <prompt>
+          <id>7</id>
+          <questions>Good thinking!</questions>
+          <soundfile>Good_thinking!</soundfile>
+        </prompt>
+      </prompts>
+    </Mal>
+
+
+
+  </Mals>
+
+</MalSet>
