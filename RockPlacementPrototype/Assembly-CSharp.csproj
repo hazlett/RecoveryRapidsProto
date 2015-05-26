@@ -60,6 +60,7 @@
      <Compile Include="Assets\RockScripts\CameraMovement.cs" />
      <Compile Include="Assets\RockScripts\RailManager.cs" />
      <Compile Include="Assets\RockScripts\RockPlacement.cs" />
+     <Compile Include="Assets\TestScripts\MovieStream.cs" />
      <Compile Include="Assets\TestScripts\MovieTest.cs" />
      <Compile Include="Assets\UIScripts\MenuUIFunctions.cs" />
  <Reference Include="UnityEngine.UI">
