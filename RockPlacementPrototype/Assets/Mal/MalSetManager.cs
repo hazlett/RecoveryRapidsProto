@@ -10,6 +10,8 @@ public class MalSetManager : MonoBehaviour {
 	public int currentPromptID;
 	public Prompt currentPrompt;
 	public MovieTexture movie;
+    public MalCanvasManager canvasManager;
+
 	private bool responseMode;
 	private string responseText;
 	private float responseTimer, responseTime;
@@ -39,6 +41,7 @@ public class MalSetManager : MonoBehaviour {
 		if (responseTimer > responseTime) {
 			responseMode = false;
 			responseTimer = 0;
+            SetCanvas();
 		}
 
 	}
@@ -56,7 +59,25 @@ public class MalSetManager : MonoBehaviour {
 		MalSetLogger.Instance.CreateEntry ("");
 		Debug.Log("Current Mal: " + currentMal.id + " : " + currentMal.Asked);
 
+        SetCanvas();
+
 	}
+
+    private void SetCanvas()
+    {
+        canvasManager.ResetCanvas();
+
+        currentPrompt = currentMal.GetPrompt(currentPromptID);
+
+        canvasManager.SetQuestionText(currentPrompt.Question);
+
+        for (int i = 0; i < currentPrompt.buttonComponents.Count; i++)
+        {
+            canvasManager.SetButtonProperties(i, currentPrompt.buttonComponents[i].Text);
+        }
+
+        canvasManager.ClearButtons();
+    }
 
 	void OnGUI()
 	{
@@ -95,18 +116,32 @@ public class MalSetManager : MonoBehaviour {
 		else {
 			foreach (ButtonComponent bc in currentPrompt.buttonComponents) {
 				if (GUILayout.Button (bc.Text)) {
-					if ((bc.TextPrompt != "") && (bc.TextPrompt != null)) {
-						responseMode = true;
-						responseText = bc.TextPrompt;
-					}
-					currentPromptID = bc.FollowUp;
-					videoID = bc.VideoFollowUpId;
-					videoStarted = false;
-					MalSetLogger.Instance.CreateEntry(String.Format("{0}: {1}", currentPrompt.Question, bc.Text));
+                    ButtonResponse(bc);
 				}
 			}
 		}
 	}
+
+    private void ButtonResponse(ButtonComponent bc)
+    {
+        if ((bc.TextPrompt != "") && (bc.TextPrompt != null))
+        {
+            responseMode = true;
+            responseText = bc.TextPrompt;
+
+            canvasManager.SetResponseWindow(responseText);
+        }
+        currentPromptID = bc.FollowUp;
+        videoID = bc.VideoFollowUpId;
+        videoStarted = false;
+
+        if (!responseMode)
+        {
+            SetCanvas();
+        }
+        MalSetLogger.Instance.CreateEntry(String.Format("{0}: {1}", currentPrompt.Question, bc.Text));
+    }
+
 	private IEnumerator LoadVideo(string fileName)
 	{
 		WWW www = new WWW ("file:///TurnOnLight1.ogv");
