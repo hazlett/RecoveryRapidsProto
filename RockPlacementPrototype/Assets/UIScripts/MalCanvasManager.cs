@@ -18,6 +18,8 @@ public class MalCanvasManager : MonoBehaviour {
             text[i] = button[i].transform.GetChild(0).GetComponent<Text>();
             rect[i] = button[i].gameObject.GetComponent<RectTransform>();
 
+            //button[i].onClick().addListener(() => someMethod());
+
             text[i].text = ""; 
         }
 
