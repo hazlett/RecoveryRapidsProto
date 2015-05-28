@@ -4,7 +4,9 @@ using OhioState.CanyonAdventure;
 using System;
 
 public class MalSetManager : MonoBehaviour {
-	private MalSet malSet;
+    private static MalSetManager instance;
+    public static MalSetManager Instance { get { return instance; } }
+    private MalSet malSet;
 	private MalSetSerializer serializer;
 	public Mal currentMal;
 	public int currentPromptID;
@@ -12,11 +14,24 @@ public class MalSetManager : MonoBehaviour {
 	public MovieTexture movie;
     public MalCanvasManager canvasManager;
 
+    private bool finalStatement;
 	private bool responseMode;
 	private string responseText;
 	private float responseTimer, responseTime;
 	private int videoID;
 	private bool videoStarted;
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
 
 	void Start () {
 		MalSetLogger.Instance.Open ();
@@ -27,36 +42,58 @@ public class MalSetManager : MonoBehaviour {
 		responseTime = 3.0f;
 		serializer = new MalSetSerializer ();
 		malSet = serializer.Read ("MalQuestions.xml");
-		foreach (Mal mal in malSet.malList) {
-			Debug.Log(mal.id);
-		}
+
 		SetMal ();
 	}
 
 	void Update ()
 	{
+        // Ordering of if statements very important
+
 		if (responseMode) {
 			responseTimer += Time.deltaTime;
 		}
 		if (responseTimer > responseTime) {
 			responseMode = false;
 			responseTimer = 0;
-            SetCanvas();
+            if (finalStatement)
+                SetMal();
+            else
+                SetCanvas();
 		}
+        if (currentPromptID == -1)
+        {
+            currentMal.Asked = true;
+            SetMal();
+            return;
+        }
+        if ((currentPrompt.buttonComponents.Count == 0) && (!responseMode))
+        {
+            responseMode = true;
+            responseText = currentPrompt.Question;
+            finalStatement = true;
+        }
+        if (currentPrompt.HasVideo())
+        {
+            canvasManager.ActivateMovie();
+        }
+
 
 	}
 	private void SetMal()
 	{
+        Debug.Log("SetMal");
 		if (malSet.AllAsked()) {
 			Debug.Log("All asked");
 		}
-
+        canvasManager.DeactivateMovie();
 		currentPromptID = 0;
 		videoID = -1;
 
 		currentMal = malSet.GetMal ();
 		currentMal.Asked = true;
-		MalSetLogger.Instance.CreateEntry ("");
+        finalStatement = false;
+        MalSetLogger.Instance.CreateEntry ("");
 		Debug.Log("Current Mal: " + currentMal.id + " : " + currentMal.Asked);
 
         SetCanvas();
@@ -70,59 +107,15 @@ public class MalSetManager : MonoBehaviour {
         currentPrompt = currentMal.GetPrompt(currentPromptID);
 
         canvasManager.SetQuestionText(currentPrompt.Question);
-
         for (int i = 0; i < currentPrompt.buttonComponents.Count; i++)
         {
-            canvasManager.SetButtonProperties(i, currentPrompt.buttonComponents[i].Text);
+            canvasManager.SetButtonProperties(i, currentPrompt.buttonComponents[i]);
         }
-
+        
         canvasManager.ClearButtons();
     }
 
-	void OnGUI()
-	{
-		if (responseMode) {
-			GUILayout.Label(responseText);
-			return;
-		}
-		if (currentPromptID == -1) {
-			currentMal.Asked = true;
-			SetMal();
-			return;
-		}
-		if (movie != null) {
-			if (movie.isPlaying)
-			{
-				GUILayout.Label("MOVIE IS PLAYING");
-				return;
-			}
-		}
-		currentPrompt = currentMal.GetPrompt (currentPromptID);
-		GUILayout.Label(currentPrompt.Question);
-		if (currentPrompt.HasVideo()) {
-			GUILayout.Label("HAS VIDEO");
-			GUILayout.Label(currentPrompt.GetVideo(videoID).Filename);
-			if (!videoStarted)
-			{
-				videoStarted = true;
-				StartCoroutine(LoadVideo(currentPrompt.GetVideo(videoID).Filename));
-			}
-		}
-		if (currentPrompt.buttonComponents.Count == 0) {
-			responseMode = true;
-			responseText = currentPrompt.Question;
-			SetMal();
-		} 
-		else {
-			foreach (ButtonComponent bc in currentPrompt.buttonComponents) {
-				if (GUILayout.Button (bc.Text)) {
-                    ButtonResponse(bc);
-				}
-			}
-		}
-	}
-
-    private void ButtonResponse(ButtonComponent bc)
+    internal void ButtonResponse(ButtonComponent bc)
     {
         if ((bc.TextPrompt != "") && (bc.TextPrompt != null))
         {

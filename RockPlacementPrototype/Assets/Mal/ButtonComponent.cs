@@ -104,35 +104,6 @@ namespace OhioState.CanyonAdventure
         }
 
         /// <summary>
-        /// Setup the orientation of the button component
-        /// </summary>
-        /* [XmlAttribute("orientation")]
-        public ButtonOrientation Orientation
-        {
-            set
-            {
-                this.orientation = value;
-
-                if (this.orientation == ButtonOrientation.HORTIZONTAL)
-                {
-                    this.defaultTexture = defaultHortizontalTexture;
-                    this.onOverTexture = onOverHortizontalTexture;
-                }
-
-                else if (this.orientation == ButtonOrientation.VERTICAL)
-                {
-                    this.defaultTexture = defaultVerticalTexture;
-                    this.onOverTexture = onOverVerticalTexture;
-                }
-            }
-
-            get
-            {
-                return this.orientation;
-            }
-        } */
-
-        /// <summary>
         /// Check the if there is a collision with the button, if there is
         /// returns true, false otherwise
         /// </summary>

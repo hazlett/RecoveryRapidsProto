@@ -1,25 +1,31 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using OhioState.CanyonAdventure;
 
 public class MalCanvasManager : MonoBehaviour {
 
     private Button[] button = new Button[5];
     private Text[] text = new Text[5];
+    public ButtonComponent[] buttonComponents = new ButtonComponent[5];
     private RectTransform[] rect = new RectTransform[5];
     private Text questionText, responseText;
     private GameObject responseWindow;
+    private GameObject movieWindow, buttons;
+    private bool moviePlaying;
 
-	void Start () {
-
+	void Awake () {
+        movieWindow = GameObject.Find("MovieWindow");
+        movieWindow.SetActive(false);
+        buttons = GameObject.Find("Buttons");
         for (int i = 0; i < button.Length; i++)
         {
             button[i] = GameObject.Find("Button" + (i + 1).ToString()).GetComponent<Button>();
             text[i] = button[i].transform.GetChild(0).GetComponent<Text>();
             rect[i] = button[i].gameObject.GetComponent<RectTransform>();
-
-            //button[i].onClick().addListener(() => someMethod());
-
+            int captured = i;
+            button[i].onClick.AddListener(() => ExecuteButton(captured));
+           
             text[i].text = ""; 
         }
 
@@ -30,14 +36,51 @@ public class MalCanvasManager : MonoBehaviour {
 
         responseWindow.SetActive(false);
 	}
-	
+
 	void Update () {
 	
 	}
-
-    internal void SetButtonProperties(int buttonNumber, string newText)
+    internal void ActivateMovie()
     {
-        text[buttonNumber].text = newText;
+        if (!movieWindow.activeSelf)
+        {
+            AdjustButtons();
+            movieWindow.SetActive(true);
+            moviePlaying = true;
+        }
+    }
+    internal void DeactivateMovie()
+    {
+        if (movieWindow.activeSelf)
+        {
+            ResetButtons();
+            movieWindow.SetActive(false);
+            moviePlaying = false;
+        }
+    }
+    private void AdjustButtons()
+    {
+        RectTransform rect = button[1].GetComponent<RectTransform>();
+        float translate = rect.position.y - rect.rect.height;
+        buttons.transform.position -= new Vector3(0, translate, 0);
+    }
+    private void ResetButtons()
+    {
+        buttons.transform.position = Vector3.zero;
+    }
+    internal void ExecuteButton(int i)
+    {
+        Debug.Log("Button Clicked: " + i);
+        MalSetManager.Instance.ButtonResponse(buttonComponents[i]);
+
+    }
+
+    internal void SetButtonProperties(int buttonNumber, ButtonComponent bc)
+    {
+        Debug.Log("Setting button props: " + buttonNumber);
+
+        buttonComponents[buttonNumber] = bc;
+        text[buttonNumber].text = bc.Text;
     }
 
     internal void SetQuestionText(string question)

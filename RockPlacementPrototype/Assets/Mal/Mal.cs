@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Serialization;
+using UnityEngine;
 
 namespace OhioState.CanyonAdventure
 {
@@ -24,7 +26,17 @@ namespace OhioState.CanyonAdventure
 
         public Prompt GetPrompt(int value)
         {
-            return this.promptList.ElementAt(value);
+            try
+            {
+                Debug.Log("GetPrompt: " + value);
+                return this.promptList.ElementAt(value);
+            }
+            catch (Exception e)
+            {
+                Debug.Log("GetPrompt error: " + value);
+                Debug.Log(e.Message);
+                return null;
+            }
         }
 
         public void AddPrompt(Prompt prompt)
