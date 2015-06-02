@@ -28,7 +28,6 @@ namespace OhioState.CanyonAdventure
         {
             try
             {
-                Debug.Log("GetPrompt: " + value);
                 return this.promptList.ElementAt(value);
             }
             catch (Exception e)

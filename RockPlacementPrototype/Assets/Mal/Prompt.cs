@@ -199,45 +199,45 @@ namespace OhioState.CanyonAdventure
         /// Loads the video with the given id to the prompt
         /// </summary>
         /// <param name="id">The id to the video</param>
-        public void LoadVideo(int id)
-        {
-            if (videoComponents.Count() > 0)
-            {
-                videoComponents.ElementAt(id).LoadVideo();
-            }
+        //public void LoadVideo(int id)
+        //{
+        //    if (videoComponents.Count() > 0)
+        //    {
+        //        videoComponents.ElementAt(id).LoadVideo();
+        //    }
 
-            // if there are no videos in the prompt
-            else
-            {
-                // then this is an error
-                Console.WriteLine("Error: video follow up was specified, but no" +
-                    "videos were loaded to the prompt");
-            }
-        }
+        //    // if there are no videos in the prompt
+        //    else
+        //    {
+        //        // then this is an error
+        //        Console.WriteLine("Error: video follow up was specified, but no" +
+        //            "videos were loaded to the prompt");
+        //    }
+        //}
 
  
 
-        public void LoadVideo()
-        {
-            if (videoComponents.Count() > 0)
-            {
-                videoComponents.ElementAt(0).LoadVideo();
-            }
+        //public void LoadVideo()
+        //{
+        //    if (videoComponents.Count() > 0)
+        //    {
+        //        videoComponents.ElementAt(0).LoadVideo();
+        //    }
 
-            else
-            {
-                Console.WriteLine("error: video follow up was specified, but no" +
-                    "videos were loaded to the prompt");
-            }
-        }
+        //    else
+        //    {
+        //        Console.WriteLine("error: video follow up was specified, but no" +
+        //            "videos were loaded to the prompt");
+        //    }
+        //}
 
-        public void UnloadVideo()
-        {
-            if (videoComponents.Count() > 0)
-            {
-                videoComponents.ElementAt(0).UnloadVideo();
-            }
-        }
+        //public void UnloadVideo()
+        //{
+        //    if (videoComponents.Count() > 0)
+        //    {
+        //        videoComponents.ElementAt(0).UnloadVideo();
+        //    }
+        //}
 
         public void Initialize()
         {

@@ -49,6 +49,7 @@
      <Compile Include="Assets\Mal\Answer.cs" />
      <Compile Include="Assets\Mal\ButtonComponent.cs" />
      <Compile Include="Assets\Mal\Mal.cs" />
+     <Compile Include="Assets\Mal\MalButton.cs" />
      <Compile Include="Assets\Mal\MalSet.cs" />
      <Compile Include="Assets\Mal\MalSetLogger.cs" />
      <Compile Include="Assets\Mal\MalSetManager.cs" />

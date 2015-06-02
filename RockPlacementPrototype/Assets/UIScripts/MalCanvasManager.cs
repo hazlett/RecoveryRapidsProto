@@ -13,6 +13,8 @@ public class MalCanvasManager : MonoBehaviour {
     private GameObject responseWindow;
     private GameObject movieWindow, buttons;
     private bool moviePlaying;
+    private Vector3 buttonsResetPosition;
+
 
 	void Awake () {
         movieWindow = GameObject.Find("MovieWindow");
@@ -25,7 +27,6 @@ public class MalCanvasManager : MonoBehaviour {
             rect[i] = button[i].gameObject.GetComponent<RectTransform>();
             int captured = i;
             button[i].onClick.AddListener(() => ExecuteButton(captured));
-           
             text[i].text = ""; 
         }
 
@@ -36,16 +37,14 @@ public class MalCanvasManager : MonoBehaviour {
 
         responseWindow.SetActive(false);
 	}
-
-	void Update () {
-	
-	}
-    internal void ActivateMovie()
+  
+    internal void ActivateMovie(string file)
     {
         if (!movieWindow.activeSelf)
         {
             AdjustButtons();
             movieWindow.SetActive(true);
+            MovieStream.Instance.LoadVideoClip(file);
             moviePlaying = true;
         }
     }
@@ -54,30 +53,31 @@ public class MalCanvasManager : MonoBehaviour {
         if (movieWindow.activeSelf)
         {
             ResetButtons();
+            MovieStream.Instance.UnloadVideo();
             movieWindow.SetActive(false);
             moviePlaying = false;
         }
     }
     private void AdjustButtons()
     {
-        RectTransform rect = button[1].GetComponent<RectTransform>();
-        float translate = rect.position.y - rect.rect.height;
-        buttons.transform.position -= new Vector3(0, translate, 0);
+        //RectTransform rect = button[3].GetComponent<RectTransform>();
+        //float translate = rect.position.y + 60.0f;
+        buttonsResetPosition = buttons.transform.position;
+        buttons.transform.localPosition = new Vector3(0, -330, 0);
     }
     private void ResetButtons()
     {
-        buttons.transform.position = Vector3.zero;
+        buttons.transform.position = buttonsResetPosition;
     }
+
     internal void ExecuteButton(int i)
     {
-        Debug.Log("Button Clicked: " + i);
+       // GetComponent<AudioSource>().Stop();
         MalSetManager.Instance.ButtonResponse(buttonComponents[i]);
-
     }
 
     internal void SetButtonProperties(int buttonNumber, ButtonComponent bc)
     {
-        Debug.Log("Setting button props: " + buttonNumber);
 
         buttonComponents[buttonNumber] = bc;
         text[buttonNumber].text = bc.Text;

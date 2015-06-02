@@ -13,9 +13,11 @@ public class MalSetManager : MonoBehaviour {
 	public Prompt currentPrompt;
 	public MovieTexture movie;
     public MalCanvasManager canvasManager;
+    public AudioSource audioSource;
 
     private bool finalStatement;
 	private bool responseMode;
+    internal bool ResponseMode { get { return responseMode; } }
 	private string responseText;
 	private float responseTimer, responseTime;
 	private int videoID;
@@ -53,7 +55,8 @@ public class MalSetManager : MonoBehaviour {
 		if (responseMode) {
 			responseTimer += Time.deltaTime;
 		}
-		if (responseTimer > responseTime) {
+		if ((responseTimer > responseTime) && (!audioSource.isPlaying))
+        {
 			responseMode = false;
 			responseTimer = 0;
             if (finalStatement)
@@ -73,16 +76,15 @@ public class MalSetManager : MonoBehaviour {
             responseText = currentPrompt.Question;
             finalStatement = true;
         }
-        if (currentPrompt.HasVideo())
+        if (currentPrompt.HasVideo() && !videoStarted)
         {
-            canvasManager.ActivateMovie();
+            canvasManager.ActivateMovie(currentPrompt.GetVideo(videoID).Filename);
+            videoStarted = true;
         }
-
-
 	}
+
 	private void SetMal()
 	{
-        Debug.Log("SetMal");
 		if (malSet.AllAsked()) {
 			Debug.Log("All asked");
 		}
@@ -94,12 +96,25 @@ public class MalSetManager : MonoBehaviour {
 		currentMal.Asked = true;
         finalStatement = false;
         MalSetLogger.Instance.CreateEntry ("");
-		Debug.Log("Current Mal: " + currentMal.id + " : " + currentMal.Asked);
-
         SetCanvas();
 
 	}
 
+    private void SetAudio(string file)
+    {
+        StartCoroutine(LoadAudioClip(file + ".wav"));
+    }
+    private IEnumerator LoadAudioClip(string file)
+    {
+        WWW www = new WWW("file:///" + @"C:\Users\hazlett\Documents\GitHub\RecoveryRapidsProto\RockPlacementPrototype\MALSounds\" + file);
+        yield return www;
+        if (www.error != null)
+        {
+            Debug.Log(www.error);
+        }
+        audioSource.clip = www.audioClip;
+        audioSource.Play();
+    }
     private void SetCanvas()
     {
         canvasManager.ResetCanvas();
@@ -107,6 +122,7 @@ public class MalSetManager : MonoBehaviour {
         currentPrompt = currentMal.GetPrompt(currentPromptID);
 
         canvasManager.SetQuestionText(currentPrompt.Question);
+        SetAudio(currentPrompt.SoundFile);
         for (int i = 0; i < currentPrompt.buttonComponents.Count; i++)
         {
             canvasManager.SetButtonProperties(i, currentPrompt.buttonComponents[i]);
@@ -132,15 +148,11 @@ public class MalSetManager : MonoBehaviour {
         {
             SetCanvas();
         }
+        else
+        {
+            SetAudio(bc.SoundFile);
+        }
         MalSetLogger.Instance.CreateEntry(String.Format("{0}: {1}", currentPrompt.Question, bc.Text));
     }
 
-	private IEnumerator LoadVideo(string fileName)
-	{
-		WWW www = new WWW ("file:///TurnOnLight1.ogv");
-		yield return www;
-		movie = www.movie;
-		movie.Play ();
-		Debug.Log ("Movie Play");
-	}
 }
