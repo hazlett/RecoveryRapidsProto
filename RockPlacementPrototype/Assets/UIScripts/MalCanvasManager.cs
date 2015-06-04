@@ -17,9 +17,9 @@ public class MalCanvasManager : MonoBehaviour {
 
 
 	void Awake () {
-        movieWindow = GameObject.Find("MovieWindow");
+        movieWindow = MovieStream.Instance.gameObject;
         movieWindow.SetActive(false);
-        buttons = GameObject.Find("Buttons");
+        buttons = MalButtonsManager.Instance.gameObject;
         for (int i = 0; i < button.Length; i++)
         {
             button[i] = GameObject.Find("Button" + (i + 1).ToString()).GetComponent<Button>();
