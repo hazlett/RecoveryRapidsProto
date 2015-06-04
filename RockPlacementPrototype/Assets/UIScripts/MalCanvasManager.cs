@@ -60,8 +60,6 @@ public class MalCanvasManager : MonoBehaviour {
     }
     private void AdjustButtons()
     {
-        //RectTransform rect = button[3].GetComponent<RectTransform>();
-        //float translate = rect.position.y + 60.0f;
         buttonsResetPosition = buttons.transform.position;
         buttons.transform.localPosition = new Vector3(0, -330, 0);
     }

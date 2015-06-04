@@ -36,10 +36,12 @@ public class MovieStream : MonoBehaviour
     {
         file = "TurnOnLight1.ogv";
         Debug.Log("Enable Movie");
+
         WWW www = new WWW("file:///" + @"C:\Users\hazlett\Documents\GitHub\RecoveryRapidsProto\RockPlacementPrototype\" + file);
         yield return www;
         if (www.error != null)
         {
+            MalSetManager.Instance.VideoFailed();
             Debug.Log(www.error);
         }
         movieTexture = (MovieTexture)www.movie;

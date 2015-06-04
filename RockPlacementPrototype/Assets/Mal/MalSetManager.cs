@@ -130,7 +130,11 @@ public class MalSetManager : MonoBehaviour {
         
         canvasManager.ClearButtons();
     }
-
+    internal void VideoFailed()
+    {
+        videoStarted = false;
+        SetMal();
+    }
     internal void ButtonResponse(ButtonComponent bc)
     {
         if ((bc.TextPrompt != "") && (bc.TextPrompt != null))
