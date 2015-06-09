@@ -59,6 +59,8 @@
   <ItemGroup>
     <Compile Include="Assets\Mal\Answer.cs" />
     <Compile Include="Assets\Mal\ButtonComponent.cs" />
+    <Compile Include="Assets\Mal\ButtonStruct.cs" />
+    <Compile Include="Assets\Mal\GameManager.cs" />
     <Compile Include="Assets\Mal\Mal.cs" />
     <Compile Include="Assets\Mal\MalButton.cs" />
     <Compile Include="Assets\Mal\MalButtonsManager.cs" />

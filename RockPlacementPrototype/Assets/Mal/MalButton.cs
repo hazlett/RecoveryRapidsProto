@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class MalButton : MonoBehaviour {
 
-    private int buttonID;
     private bool cursorHovering, transition;
     private float timer, maxTime;
     private MalCanvasManager canvasManager;
     private RectTransform rect;
+    private ButtonStruct button;
 
     void Start()
     {        
@@ -17,7 +18,6 @@ public class MalButton : MonoBehaviour {
     {
         transition = false;
         rect = GetComponent<RectTransform>();
-        buttonID = int.Parse(gameObject.name.Replace("Button", "")) - 1;
         canvasManager = GameObject.Find("MalCanvasManager").GetComponent<MalCanvasManager>();
         timer = 0;
         cursorHovering = false;
@@ -29,12 +29,19 @@ public class MalButton : MonoBehaviour {
         {
             if (CheckCursorPosition())
             {
-                timer += Time.deltaTime;
+                timer += Time.unscaledDeltaTime;
                 if (timer >= maxTime)
                 {
                     OnCursorExit();
                     transition = true;
-                    canvasManager.ExecuteButton(buttonID);
+                    try
+                    {
+                        button.ExecuteButton();
+                    }
+                    catch(Exception e)
+                    {
+                        Debug.Log("ExecuteButton error in MalButton:" + e.Message);
+                    }
                 }
             }
             else
@@ -55,14 +62,13 @@ public class MalButton : MonoBehaviour {
             cursorHovering = false;
         }
     }
-    void OnGUI()
-    {
-        if (cursorHovering)
-        {
-            GUILayout.Label("BUTTONID: " + buttonID);
-            GUILayout.Label("timer: " + timer);
-        }
-    }
+    //void OnGUI()
+    //{
+    //    if (cursorHovering)
+    //    {
+    //        GUILayout.Label("timer: " + timer);
+    //    }
+    //}
     public void OnCursorEnter()
     {
         timer = 0;
@@ -81,5 +87,9 @@ public class MalButton : MonoBehaviour {
     private bool CheckCursorPosition()
     {
         return RectTransformUtility.RectangleContainsScreenPoint(rect, Input.mousePosition, null);
+    }
+    internal void SetButton(ButtonStruct bs)
+    {
+        this.button = bs;
     }
 }

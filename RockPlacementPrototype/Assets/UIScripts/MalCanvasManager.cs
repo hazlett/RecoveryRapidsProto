@@ -2,47 +2,34 @@
 using UnityEngine.UI;
 using System.Collections;
 using OhioState.CanyonAdventure;
+using System.Collections.Generic;
 
 public class MalCanvasManager : MonoBehaviour {
 
-    private Button[] button = new Button[5];
-    private Text[] text = new Text[5];
-    public ButtonComponent[] buttonComponents = new ButtonComponent[5];
-    private RectTransform[] rect = new RectTransform[5];
-    private Text questionText, responseText;
-    private GameObject responseWindow;
-    private GameObject movieWindow, buttons;
+    private List<ButtonStruct> buttons;
+    public Text questionText, responseText;
+    public GameObject responseWindow;
+    public GameObject movieWindow;
     private bool moviePlaying;
     private Vector3 buttonsResetPosition;
+    private RectTransform responseWindowRect;
 
 
 	void Awake () {
         movieWindow = MovieStream.Instance.gameObject;
-        movieWindow.SetActive(false);
-        buttons = MalButtonsManager.Instance.gameObject;
-        for (int i = 0; i < button.Length; i++)
-        {
-            button[i] = GameObject.Find("Button" + (i + 1).ToString()).GetComponent<Button>();
-            text[i] = button[i].transform.GetChild(0).GetComponent<Text>();
-            rect[i] = button[i].gameObject.GetComponent<RectTransform>();
-            int captured = i;
-            button[i].onClick.AddListener(() => ExecuteButton(captured));
-            text[i].text = ""; 
-        }
+        buttons = new List<ButtonStruct>();
+       
 
-        questionText = GameObject.Find("QuestionText").GetComponent<Text>();
-
-        responseWindow = GameObject.Find("ResponseWindow");
-        responseText = responseWindow.transform.GetChild(0).GetComponent<Text>();
-
-        responseWindow.SetActive(false);
 	}
-  
+    void OnEnable()
+    {
+        movieWindow.SetActive(false);
+        responseWindow.SetActive(false);
+    }
     internal void ActivateMovie(string file)
     {
         if (!movieWindow.activeSelf)
         {
-            AdjustButtons();
             movieWindow.SetActive(true);
             MovieStream.Instance.LoadVideoClip(file);
             moviePlaying = true;
@@ -50,35 +37,22 @@ public class MalCanvasManager : MonoBehaviour {
     }
     internal void DeactivateMovie()
     {
-        if (movieWindow.activeSelf)
+        try
         {
-            ResetButtons();
-            MovieStream.Instance.UnloadVideo();
-            movieWindow.SetActive(false);
-            moviePlaying = false;
+            if (movieWindow.activeSelf)
+            {
+                MovieStream.Instance.UnloadVideo();
+                movieWindow.SetActive(false);
+                moviePlaying = false;
+            }
         }
-    }
-    private void AdjustButtons()
-    {
-        buttonsResetPosition = buttons.transform.position;
-        buttons.transform.localPosition = new Vector3(0, -330, 0);
-    }
-    private void ResetButtons()
-    {
-        buttons.transform.position = buttonsResetPosition;
+        catch { }
     }
 
-    internal void ExecuteButton(int i)
+    internal void SetButtonProperties(List<ButtonComponent> buttonComponenets)
     {
-       // GetComponent<AudioSource>().Stop();
-        MalSetManager.Instance.ButtonResponse(buttonComponents[i]);
-    }
-
-    internal void SetButtonProperties(int buttonNumber, ButtonComponent bc)
-    {
-
-        buttonComponents[buttonNumber] = bc;
-        text[buttonNumber].text = bc.Text;
+        buttons = MalButtonsManager.Instance.SetButtons(buttonComponenets);
+        
     }
 
     internal void SetQuestionText(string question)
@@ -88,29 +62,19 @@ public class MalCanvasManager : MonoBehaviour {
 
     internal void SetResponseWindow(string response)
     {
+        ResetCanvas();
+
         responseWindow.SetActive(true);
+
         responseText.text = response;
     }
 
-    internal void ClearButtons()
-    {
-        for (int i = 0; i < text.Length; i++)
-        {
-            if (text[i].text == "")
-            {
-                button[i].gameObject.SetActive(false);
-            }
-        }
-    }
 
     internal void ResetCanvas()
     {
-        for (int i = 0; i < text.Length; i++)
-        {
-            button[i].gameObject.SetActive(true);
-            text[i].text = "";
-        }
-
+        questionText.text = "";
+        try { MalButtonsManager.Instance.ClearButtons(); }
+        catch { }
         responseWindow.SetActive(false);
     }
 }
