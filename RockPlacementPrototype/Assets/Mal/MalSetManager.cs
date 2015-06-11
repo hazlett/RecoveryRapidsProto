@@ -14,23 +14,27 @@ public class MalSetManager : MonoBehaviour {
 	public MovieTexture movie;
     public MalCanvasManager canvasManager;
     public AudioSource audioSource;
-    private int malAsk, malsAsked;
+    
+    public int malAsk, malsAsked;
+    public bool responseOn;
     private bool finalStatement;
 	private bool responseMode;
-    internal bool ResponseMode { get { return responseMode; } }
 	private string responseText;
 	private float responseTimer, responseTime;
 	private int videoID;
 	private bool videoStarted;
     private bool malIsSet;
     private bool initialized;
+    internal bool ResponseMode { get { return responseMode; } }
 
     void Awake()
     {
-        Debug.Log("MalSetManager Awake");
         if (instance == null)
         {
             instance = this;
+
+            serializer = new MalSetSerializer();
+            malSet = serializer.Read("MalQuestions.xml");
         }
         else
         {
@@ -39,14 +43,21 @@ public class MalSetManager : MonoBehaviour {
     }
     void Start()
     {
-        Debug.Log("MalSetManager Start");
+        SetActive(false);
     }
-
+    internal void SetActive(bool set)
+    {
+        gameObject.SetActive(set);
+    }
+    internal void Toggle()
+    {
+        gameObject.SetActive(!gameObject.activeSelf);
+    }
     void OnEnable()
     {
         if (!initialized)
             return;
-        Debug.Log("MalSetManager OnEnable");
+        responseOn = false;
         malIsSet = false;
         MalSetLogger.Instance.Open();
         MalSetLogger.Instance.CreateEntry("-- New Session Started --");
@@ -54,8 +65,6 @@ public class MalSetManager : MonoBehaviour {
         videoStarted = false;
         responseTimer = 0.0f;
         responseTime = 3.0f;
-        serializer = new MalSetSerializer();
-        malSet = serializer.Read("MalQuestions.xml");
         try
         {
             //open config file and read MalAsk
@@ -65,23 +74,26 @@ public class MalSetManager : MonoBehaviour {
         {
             malAsk = 3;
         }
-        SetMal();
         malsAsked = 0;
+        SetMal();
+       
         Time.timeScale = 0.0f;
         malIsSet = true;
+
     }
     void OnDisable()
     {
-        Debug.Log("MalSetManager OnDisable");
         malIsSet = false;
         Time.timeScale = 1.0f;
         initialized = true;
         //Reset Everything
     }
+
 	void Update ()
-	{
+    {
+        /* Ordering of if statements very important */
+
         if (!malIsSet) return;
-        // Ordering of if statements very important
 
 		if (responseMode) {
 			responseTimer += Time.unscaledDeltaTime;
@@ -116,7 +128,6 @@ public class MalSetManager : MonoBehaviour {
 
 	private void SetMal()
     {
-        Debug.Log("SetMal: " + malsAsked);
         if (malsAsked >= malAsk)
         {
             gameObject.SetActive(false);
@@ -130,17 +141,32 @@ public class MalSetManager : MonoBehaviour {
 		currentPromptID = 0;
 		videoID = -1;
 
-		currentMal = malSet.GetMal ();
-		currentMal.Asked = true;
+        currentMal = malSet.GetMal(GetRandomMal());
+        currentMal.Asked = true;
         finalStatement = false;
         MalSetLogger.Instance.CreateEntry ("");
         SetCanvas();
         malsAsked++;
 	}
-    void OnGUI()
+    private int GetRandomMal()
     {
-        GUILayout.Label("ASKED: " + malsAsked);
+        System.Random random = new System.Random();
+        int index = random.Next(malSet.Count());
+        System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
+        stopwatch.Start();
+        double timeout = 100;
+        
+        while (malSet.BeenAsked(index) && (stopwatch.Elapsed.TotalMilliseconds <= timeout))
+        {
+            index = random.Next(malSet.Count());
+        }
+        if (stopwatch.Elapsed.TotalMilliseconds >= timeout)
+        {
+            Debug.Log("Timeout occured: " + stopwatch.Elapsed.TotalMilliseconds);
+        }
+        return index;
     }
+
     private void SetAudio(string file)
     {
         StartCoroutine(LoadAudioClip(file + ".wav"));
@@ -161,12 +187,17 @@ public class MalSetManager : MonoBehaviour {
         canvasManager.ResetCanvas();
 
         currentPrompt = currentMal.GetPrompt(currentPromptID);
-
-        canvasManager.SetQuestionText(currentPrompt.Question);
-        SetAudio(currentPrompt.SoundFile);
-
-        MalButtonsManager.Instance.ClearButtons();
-        canvasManager.SetButtonProperties(currentPrompt.buttonComponents);
+        if (currentPrompt != null)
+        {
+            canvasManager.SetQuestionText(currentPrompt.Question);
+            SetAudio(currentPrompt.SoundFile);
+            MalButtonsManager.Instance.ClearButtons();
+            canvasManager.SetButtonProperties(currentPrompt.buttonComponents);
+        }
+        else
+        {
+            MalButtonsManager.Instance.ClearButtons();
+        }
               
     }
     internal void VideoFailed()
@@ -176,7 +207,7 @@ public class MalSetManager : MonoBehaviour {
     }
     internal void ButtonResponse(ButtonComponent bc)
     {
-        if ((bc.TextPrompt != "") && (bc.TextPrompt != null))
+        if ((bc.TextPrompt != "") && (bc.TextPrompt != null) && responseOn)
         {
             responseMode = true;
             responseText = bc.TextPrompt;
@@ -195,7 +226,8 @@ public class MalSetManager : MonoBehaviour {
         {
             SetAudio(bc.SoundFile);
         }
-        MalSetLogger.Instance.CreateEntry(String.Format("{0}: {1}", currentPrompt.Question, bc.Text));
+        if (currentPrompt != null)
+            MalSetLogger.Instance.CreateEntry(String.Format("{0}: {1}", currentPrompt.Question, bc.Text));
     }
 
 }

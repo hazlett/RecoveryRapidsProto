@@ -261,27 +261,27 @@ namespace OhioState.CanyonAdventure
             }
         }
 
-        /// <summary>
-        /// Checks the collision with all of the responces in the possible
-        /// responces
-        /// </summary>
-        /// <returns>returns the element that has detected a collision, returns -1
-        /// otherwise</returns>
-        public int CheckCollision(Cursor cursor, PromptLayout promptLayout)
-        {
-            int returnValue = -1;
+        ///// <summary>
+        ///// Checks the collision with all of the responces in the possible
+        ///// responces
+        ///// </summary>
+        ///// <returns>returns the element that has detected a collision, returns -1
+        ///// otherwise</returns>
+        //public int CheckCollision(Cursor cursor, PromptLayout promptLayout)
+        //{
+        //    int returnValue = -1;
 
-            // iterate through the button components list
-            int index = 0;
-            foreach (ButtonComponent component in buttonComponents)
-            {
-                if (component.CheckCollision(cursor, promptLayout.buttonsInRegion3[ index ]))
-                {
-                    returnValue = component.Id;
-                }
-                index++;
-            }
-            return returnValue;
-        }
+        //    // iterate through the button components list
+        //    int index = 0;
+        //    foreach (ButtonComponent component in buttonComponents)
+        //    {
+        //        if (component.CheckCollision(cursor, promptLayout.buttonsInRegion3[ index ]))
+        //        {
+        //            returnValue = component.Id;
+        //        }
+        //        index++;
+        //    }
+        //    return returnValue;
+        //}
     }
 }

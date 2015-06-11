@@ -1,7 +1,5 @@
 Make 'responsive' (have on first paint check components on screen and size things accordingly) //Ben
 
-Randomly choose MALs and have a max number of MALs used  //Me
-
 Create GUI item to signify selecting button //Ben
 
 
@@ -16,3 +14,5 @@ Add video clips and check for null/missing video files (if video is missing/null
 Make buttons square and look like old MAL
 
 Make buttons more dynamic (instead of Button[5] have List<Button>)
+
+Randomly choose MALs and have a max number of MALs used 

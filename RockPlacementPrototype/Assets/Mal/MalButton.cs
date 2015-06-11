@@ -9,7 +9,9 @@ public class MalButton : MonoBehaviour {
     private MalCanvasManager canvasManager;
     private RectTransform rect;
     private ButtonStruct button;
-
+    public Texture2D MalSelectingTexture;
+    private static float cursorSize = 16.0f;
+    private static float selectionLength = 3.0f;
     void Start()
     {        
         Initialize();
@@ -62,13 +64,13 @@ public class MalButton : MonoBehaviour {
             cursorHovering = false;
         }
     }
-    //void OnGUI()
-    //{
-    //    if (cursorHovering)
-    //    {
-    //        GUILayout.Label("timer: " + timer);
-    //    }
-    //}
+    void OnGUI()
+    {
+        if (cursorHovering)
+        {
+            GUI.DrawTexture(new Rect(Input.mousePosition.x, Screen.height - Input.mousePosition.y, selectionLength * cursorSize * ((timer % maxTime) / maxTime), cursorSize), MalSelectingTexture);
+        }
+    }
     public void OnCursorEnter()
     {
         timer = 0;

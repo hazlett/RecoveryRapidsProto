@@ -32,8 +32,6 @@ namespace OhioState.CanyonAdventure
             }
             catch (Exception e)
             {
-                Debug.Log("GetPrompt error: " + value);
-                Debug.Log(e.Message);
                 return null;
             }
         }

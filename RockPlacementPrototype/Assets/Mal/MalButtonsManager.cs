@@ -11,13 +11,8 @@ public class MalButtonsManager : MonoBehaviour {
 
     void Awake()
     {
-        Debug.Log("MalButtonsManager Awake");
         if (instance == null) instance = this;
         else Destroy(this);
-    }
-    void Start()
-    {
-        Debug.Log("MalButtonsManager Start");
     }
     internal List<ButtonStruct> SetButtons(List<ButtonComponent> buttonComponents)
     {

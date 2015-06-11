@@ -32,7 +32,7 @@ namespace OhioState.CanyonAdventure
         {
             if (this.streamWriter != null)
             {
-                throw new InvalidOperationException("Logger File Open");
+                return;
             }
             
             string userPath = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -66,8 +66,14 @@ namespace OhioState.CanyonAdventure
             {
                 throw new InvalidOperationException("Logger File Not Open");
             }
-
-            this.streamWriter.WriteLine("{0} - {1}", DateTime.Now.ToString("ddMMyyyy hh:mm:ss"), entry);
+            try
+            {
+                this.streamWriter.WriteLine("{0} - {1}", DateTime.Now.ToString("ddMMyyyy hh:mm:ss"), entry);
+            }
+            catch (Exception e)
+            {
+                UnityEngine.Debug.Log("CreateEntry failed: " + e.Message);
+            }
         }
     }
 }

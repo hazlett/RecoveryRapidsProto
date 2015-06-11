@@ -21,7 +21,6 @@ public class MovieStream : MonoBehaviour
     }
     internal void LoadVideoClip(string file)
     {
-        Debug.Log("Loading: " + file);
         StartCoroutine(LoadVideo(file + ".ogg"));
     }
     internal void UnloadVideo()
@@ -35,7 +34,6 @@ public class MovieStream : MonoBehaviour
     private IEnumerator LoadVideo(string file)
     {
         file = "TurnOnLight1.ogv";
-        Debug.Log("Enable Movie");
 
         WWW www = new WWW("file:///" + @"C:\Users\hazlett\Documents\GitHub\RecoveryRapidsProto\RockPlacementPrototype\" + file);
         yield return www;

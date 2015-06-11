@@ -64,21 +64,18 @@
     <Compile Include="Assets\Mal\Mal.cs" />
     <Compile Include="Assets\Mal\MalButton.cs" />
     <Compile Include="Assets\Mal\MalButtonsManager.cs" />
+    <Compile Include="Assets\Mal\MalCanvasManager.cs" />
     <Compile Include="Assets\Mal\MalSet.cs" />
     <Compile Include="Assets\Mal\MalSetLogger.cs" />
     <Compile Include="Assets\Mal\MalSetManager.cs" />
     <Compile Include="Assets\Mal\MalSetSerializer.cs" />
+    <Compile Include="Assets\Mal\MovieStream.cs" />
     <Compile Include="Assets\Mal\Prompt.cs" />
-    <Compile Include="Assets\Mal\PromptLayout.cs" />
     <Compile Include="Assets\Mal\Question.cs" />
     <Compile Include="Assets\Mal\VideoComponent.cs" />
     <Compile Include="Assets\RockScripts\CameraMovement.cs" />
     <Compile Include="Assets\RockScripts\RailManager.cs" />
     <Compile Include="Assets\RockScripts\RockPlacement.cs" />
-    <Compile Include="Assets\TestScripts\MovieStream.cs" />
-    <Compile Include="Assets\TestScripts\MovieTest.cs" />
-    <Compile Include="Assets\UIScripts\MalCanvasManager.cs" />
-    <Compile Include="Assets\UIScripts\MenuUIFunctions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>
