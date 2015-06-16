@@ -199,45 +199,45 @@ namespace OhioState.CanyonAdventure
         /// Loads the video with the given id to the prompt
         /// </summary>
         /// <param name="id">The id to the video</param>
-        public void LoadVideo(int id)
-        {
-            if (videoComponents.Count() > 0)
-            {
-                videoComponents.ElementAt(id).LoadVideo();
-            }
+        //public void LoadVideo(int id)
+        //{
+        //    if (videoComponents.Count() > 0)
+        //    {
+        //        videoComponents.ElementAt(id).LoadVideo();
+        //    }
 
-            // if there are no videos in the prompt
-            else
-            {
-                // then this is an error
-                Console.WriteLine("Error: video follow up was specified, but no" +
-                    "videos were loaded to the prompt");
-            }
-        }
+        //    // if there are no videos in the prompt
+        //    else
+        //    {
+        //        // then this is an error
+        //        Console.WriteLine("Error: video follow up was specified, but no" +
+        //            "videos were loaded to the prompt");
+        //    }
+        //}
 
  
 
-        public void LoadVideo()
-        {
-            if (videoComponents.Count() > 0)
-            {
-                videoComponents.ElementAt(0).LoadVideo();
-            }
+        //public void LoadVideo()
+        //{
+        //    if (videoComponents.Count() > 0)
+        //    {
+        //        videoComponents.ElementAt(0).LoadVideo();
+        //    }
 
-            else
-            {
-                Console.WriteLine("error: video follow up was specified, but no" +
-                    "videos were loaded to the prompt");
-            }
-        }
+        //    else
+        //    {
+        //        Console.WriteLine("error: video follow up was specified, but no" +
+        //            "videos were loaded to the prompt");
+        //    }
+        //}
 
-        public void UnloadVideo()
-        {
-            if (videoComponents.Count() > 0)
-            {
-                videoComponents.ElementAt(0).UnloadVideo();
-            }
-        }
+        //public void UnloadVideo()
+        //{
+        //    if (videoComponents.Count() > 0)
+        //    {
+        //        videoComponents.ElementAt(0).UnloadVideo();
+        //    }
+        //}
 
         public void Initialize()
         {
@@ -261,27 +261,27 @@ namespace OhioState.CanyonAdventure
             }
         }
 
-        /// <summary>
-        /// Checks the collision with all of the responces in the possible
-        /// responces
-        /// </summary>
-        /// <returns>returns the element that has detected a collision, returns -1
-        /// otherwise</returns>
-        public int CheckCollision(Cursor cursor, PromptLayout promptLayout)
-        {
-            int returnValue = -1;
+        ///// <summary>
+        ///// Checks the collision with all of the responces in the possible
+        ///// responces
+        ///// </summary>
+        ///// <returns>returns the element that has detected a collision, returns -1
+        ///// otherwise</returns>
+        //public int CheckCollision(Cursor cursor, PromptLayout promptLayout)
+        //{
+        //    int returnValue = -1;
 
-            // iterate through the button components list
-            int index = 0;
-            foreach (ButtonComponent component in buttonComponents)
-            {
-                if (component.CheckCollision(cursor, promptLayout.buttonsInRegion3[ index ]))
-                {
-                    returnValue = component.Id;
-                }
-                index++;
-            }
-            return returnValue;
-        }
+        //    // iterate through the button components list
+        //    int index = 0;
+        //    foreach (ButtonComponent component in buttonComponents)
+        //    {
+        //        if (component.CheckCollision(cursor, promptLayout.buttonsInRegion3[ index ]))
+        //        {
+        //            returnValue = component.Id;
+        //        }
+        //        index++;
+        //    }
+        //    return returnValue;
+        //}
     }
 }

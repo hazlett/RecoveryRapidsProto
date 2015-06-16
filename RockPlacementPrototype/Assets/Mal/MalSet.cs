@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Serialization;
+using UnityEngine;
 
 namespace OhioState.CanyonAdventure
 {
@@ -101,6 +102,7 @@ namespace OhioState.CanyonAdventure
         /// <param name="malIndex">The mal to set the asked flag to true</param>
         public void SetAsked(int malIndex)
         {
+            Debug.Log("SetAsked: " + malIndex);
             this.malList.ElementAt(malIndex).Asked = true;
         }
 
